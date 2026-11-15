@@ -1,0 +1,25 @@
+--- a/hostinger-noise/ios/server/server.py
++++ b/hostinger-noise/ios/server/server.py
+@@ -1494,7 +1494,8 @@
+             "criteria": {"true": "The video presents the claim as fact or as real, in its words, its caption or its on-screen text, also with a "
+                                  "vague source ('people say').",
+                          "false": "The video is a fact check or a debunk, says the claim is false or unproven, asks it only as a question, mocks "
+-                                  "it, or reports it neutrally as someone else's claim."}}
++                                  "it, or reports it neutrally as someone else's claim. Also false for satire or parody: a satirical outlet "
++                                  "or account (such as The Onion or The Babylon Bee), a comedy sketch, or a fake news report made as a joke."}}
+ 
+ 
+ def after_context(c):
+@@ -1598,6 +1599,12 @@
+         if now - max(sc.get("pausedSince", 0), c["claimTs"]) >= LEAVE_SECONDS:
+             return "no media for %d s" % LEAVE_SECONDS
+         return None
++    cand = sc.get("candidate")
++    if (cand and sc["videoId"] == c["videoId"] and handle_key(cand.get("handle"))
++            and handle_key(cand.get("handle")) != handle_key(c.get("handle"))):
++        # The first read of the next video: a frame is read only when Jev says it is not the claim's video, and the
++        # read names another account. Waiting for the second read that confirms the video cost about 7 s more.
++        return "next video (first read)"
+     if sc["videoId"] == c["videoId"]:
+         return None  # the claim's video is in front (also paused, looped or restarted)
+     if now - c["claimTs"] >= DELIVER_SECONDS:

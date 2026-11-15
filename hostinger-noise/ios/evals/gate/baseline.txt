@@ -1,0 +1,134 @@
+set set.jsonl: 290 rows; spec techniques.json (2026-11-15.1); assert question server.py ASSERT_Q
+
+== dev, gate only  (public>=0.50 claim>=0.70 quote<0.90, no assert)
+category                  n   tp   fp   fn   tn    prec recall     f1
+asserted_false           28   27    0    1    0   1.000  0.964  0.982
+asserted_true            25   25    0    0    0   1.000  1.000  1.000
+cooking_lifestyle        18    0    0    0   18     -      -      -  
+debunk                   18    0   12    0    6   0.000    -      -  
+noisy                    28   18    1    0    9   0.947  1.000  0.973
+opinion                  18    0    0    0   18     -      -      -  
+personal_story           14    0    2    0   12   0.000    -      -  
+prediction                7    0    0    0    7     -      -      -  
+question                 14    0    0    0   14     -      -      -  
+quoted_reported          18    0    4    0   14   0.000    -      -  
+satire                   11    0    5    0    6   0.000    -      -  
+vague_source_assert       7    7    0    0    0   1.000  1.000  1.000
+TOTAL                   206   77   24    1  104   0.762  0.987  0.860
+
+== dev, gate + speaker question  (public>=0.50 claim>=0.70 quote<0.90 assert>=0.50)
+category                  n   tp   fp   fn   tn    prec recall     f1
+asserted_false           28   27    0    1    0   1.000  0.964  0.982
+asserted_true            25   25    0    0    0   1.000  1.000  1.000
+cooking_lifestyle        18    0    0    0   18     -      -      -  
+debunk                   18    0    1    0   17   0.000    -      -  
+noisy                    28   18    1    0    9   0.947  1.000  0.973
+opinion                  18    0    0    0   18     -      -      -  
+personal_story           14    0    2    0   12   0.000    -      -  
+prediction                7    0    0    0    7     -      -      -  
+question                 14    0    0    0   14     -      -      -  
+quoted_reported          18    0    4    0   14   0.000    -      -  
+satire                   11    0    5    0    6   0.000    -      -  
+vague_source_assert       7    7    0    0    0   1.000  1.000  1.000
+TOTAL                   206   77   13    1  115   0.856  0.987  0.917
+-- wrong items (FP = false alert, FN = missed claim)
+FP debunk-021                 pub 0.74 claim 0.97 quote 0.33 assert 0.910 | Elon Musk did not buy CNN, that was a parody account
+FP noisy-036                  pub 0.97 claim 0.91 quote 0.89 assert 0.640 | the police say two people were arrested after the
+FP personal_story-006         pub 0.96 claim 0.83 quote 0.02 assert 0.970 | I voted for the first time yesterday and I was so nervous
+FP personal_story-016         pub 0.55 claim 0.80 quote 0.02 assert 0.960 | I tried to see a doctor and the next appointment was in six weeks
+FP quoted_reported-004        pub 0.99 claim 0.96 quote 0.88 assert 0.760 | the police say two people were arrested after the protest
+FP quoted_reported-013        pub 0.99 claim 0.87 quote 0.57 assert 0.960 | The minister of health announced a new vaccine campaign for the autumn
+FP quoted_reported-016        pub 0.99 claim 0.84 quote 0.15 assert 0.570 | they say that the new tax will only hit people earning over 100k
+FP quoted_reported-020        pub 0.99 claim 0.71 quote 0.84 assert 0.910 | the court said it would announce its ruling next month
+FP satire-000                 pub 0.72 claim 0.74 quote 0.58 assert 0.890 | breaking news, the government has announced that Mondays are now illegal
+FP satire-003                 pub 0.72 claim 0.95 quote 0.30 assert 0.940 | The EU has officially classified bananas that are too curved as a threat to democracy
+FP satire-004                 pub 0.87 claim 0.94 quote 0.81 assert 0.780 | and Putin just announced he's invading the moon because it looked at him funny
+FP satire-007                 pub 0.93 claim 0.81 quote 0.27 assert 0.890 | BREAKING the Finnish government will now pay you in saunas
+FP satire-011                 pub 0.96 claim 0.96 quote 0.24 assert 0.910 | Biden and Trump agreed to settle the election with a game of Mario Kart
+FN asserted_false-026         pub 0.88 claim 0.49 quote 0.05 assert 0.960 | drinking a teaspoon of baking soda a day cures cancer, oncologists don't want you to know
+
+== test, gate only  (public>=0.50 claim>=0.70 quote<0.90, no assert)
+category                  n   tp   fp   fn   tn    prec recall     f1
+asserted_false           12   12    0    0    0   1.000  1.000  1.000
+asserted_true            10   10    0    0    0   1.000  1.000  1.000
+cooking_lifestyle         7    0    0    0    7     -      -      -  
+debunk                    7    0    5    0    2   0.000    -      -  
+noisy                    12    7    0    0    5   1.000  1.000  1.000
+opinion                   7    0    0    0    7     -      -      -  
+personal_story            6    0    2    0    4   0.000    -      -  
+prediction                3    0    0    0    3     -      -      -  
+question                  6    0    0    0    6     -      -      -  
+quoted_reported           7    0    0    0    7     -      -      -  
+satire                    4    0    1    0    3   0.000    -      -  
+vague_source_assert       3    3    0    0    0   1.000  1.000  1.000
+TOTAL                    84   32    8    0   44   0.800  1.000  0.889
+
+== test, gate + speaker question  (public>=0.50 claim>=0.70 quote<0.90 assert>=0.50)
+category                  n   tp   fp   fn   tn    prec recall     f1
+asserted_false           12   12    0    0    0   1.000  1.000  1.000
+asserted_true            10   10    0    0    0   1.000  1.000  1.000
+cooking_lifestyle         7    0    0    0    7     -      -      -  
+debunk                    7    0    0    0    7     -      -      -  
+noisy                    12    7    0    0    5   1.000  1.000  1.000
+opinion                   7    0    0    0    7     -      -      -  
+personal_story            6    0    2    0    4   0.000    -      -  
+prediction                3    0    0    0    3     -      -      -  
+question                  6    0    0    0    6     -      -      -  
+quoted_reported           7    0    0    0    7     -      -      -  
+satire                    4    0    1    0    3   0.000    -      -  
+vague_source_assert       3    3    0    0    0   1.000  1.000  1.000
+TOTAL                    84   32    3    0   49   0.914  1.000  0.955
+-- wrong items (FP = false alert, FN = missed claim)
+FP personal_story-002         pub 0.84 claim 0.87 quote 0.02 assert 0.970 | I got my covid shot in 2021 and honestly I felt fine after
+FP personal_story-015         pub 0.65 claim 0.98 quote 0.02 assert 0.980 | my family fled Syria in 2015 and we ended up in Germany
+FP satire-005                 pub 0.98 claim 0.95 quote 0.46 assert 0.960 | Parliament voted 200 to 0 to give themselves a nap room, the only thing they ever agreed on
+
+## tuned on dev (precision floor 0.95): {'public': 0.6, 'claim': 0.7, 'quote': 0.3, 'assert': 0.6} -> dev precision 0.961 recall 0.949
+
+== dev, TUNED  (public>=0.60 claim>=0.70 quote<0.30 assert>=0.60)
+category                  n   tp   fp   fn   tn    prec recall     f1
+asserted_false           28   24    0    4    0   1.000  0.857  0.923
+asserted_true            25   25    0    0    0   1.000  1.000  1.000
+cooking_lifestyle        18    0    0    0   18     -      -      -  
+debunk                   18    0    0    0   18     -      -      -  
+noisy                    28   18    0    0   10   1.000  1.000  1.000
+opinion                  18    0    0    0   18     -      -      -  
+personal_story           14    0    1    0   13   0.000    -      -  
+prediction                7    0    0    0    7     -      -      -  
+question                 14    0    0    0   14     -      -      -  
+quoted_reported          18    0    0    0   18     -      -      -  
+satire                   11    0    2    0    9   0.000    -      -  
+vague_source_assert       7    7    0    0    0   1.000  1.000  1.000
+TOTAL                   206   74    3    4  125   0.961  0.949  0.955
+-- wrong items (FP = false alert, FN = missed claim)
+FP personal_story-006         pub 0.96 claim 0.83 quote 0.02 assert 0.970 | I voted for the first time yesterday and I was so nervous
+FP satire-007                 pub 0.93 claim 0.81 quote 0.27 assert 0.890 | BREAKING the Finnish government will now pay you in saunas
+FP satire-011                 pub 0.96 claim 0.96 quote 0.24 assert 0.910 | Biden and Trump agreed to settle the election with a game of Mario Kart
+FN asserted_false-007         pub 0.98 claim 0.98 quote 0.71 assert 0.960 | the Pentagon confirmed that the Maui fires were started by a directed energy weapon
+FN asserted_false-011         pub 0.99 claim 0.97 quote 0.71 assert 0.970 | the new digital euro will expire if you don't spend it within 90 days, the ECB said so
+FN asserted_false-024         pub 0.57 claim 0.97 quote 0.07 assert 0.890 | Greta Thunberg's family owns a big oil company in Sweden
+FN asserted_false-026         pub 0.88 claim 0.49 quote 0.05 assert 0.960 | drinking a teaspoon of baking soda a day cures cancer, oncologists don't want you to know
+
+== test, TUNED  (public>=0.60 claim>=0.70 quote<0.30 assert>=0.60)
+category                  n   tp   fp   fn   tn    prec recall     f1
+asserted_false           12   12    0    0    0   1.000  1.000  1.000
+asserted_true            10   10    0    0    0   1.000  1.000  1.000
+cooking_lifestyle         7    0    0    0    7     -      -      -  
+debunk                    7    0    0    0    7     -      -      -  
+noisy                    12    6    0    1    5   1.000  0.857  0.923
+opinion                   7    0    0    0    7     -      -      -  
+personal_story            6    0    2    0    4   0.000    -      -  
+prediction                3    0    0    0    3     -      -      -  
+question                  6    0    0    0    6     -      -      -  
+quoted_reported           7    0    0    0    7     -      -      -  
+satire                    4    0    0    0    4     -      -      -  
+vague_source_assert       3    3    0    0    0   1.000  1.000  1.000
+TOTAL                    84   31    2    1   50   0.939  0.969  0.954
+-- wrong items (FP = false alert, FN = missed claim)
+FP personal_story-002         pub 0.84 claim 0.87 quote 0.02 assert 0.970 | I got my covid shot in 2021 and honestly I felt fine after
+FP personal_story-015         pub 0.65 claim 0.98 quote 0.02 assert 0.980 | my family fled Syria in 2015 and we ended up in Germany
+FN noisy-002                  pub 0.99 claim 0.94 quote 0.82 assert 0.960 | the WH0 said that the vaccine change your d n a it's in there report
+
+calls this run: 2 new (0.00009 USD), 578 from cache
+cache: 1086 calls, 0.04445 USD in total; cost per call 0.0000409 USD
+latency of all cached calls: p50 220 ms, p95 269 ms (n=1086)

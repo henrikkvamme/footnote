@@ -1,0 +1,165 @@
+{
+  "version": "2026-11-15.2",
+  "source": "Labels and definitions from the UNLP 2025 shared task (github.com/unlp-workshop/unlp-2025-shared-task, data/techniques-en.md). Contrast cases written for Footnote.",
+  "context": {
+    "speech": "SENTENCE TO JUDGE (spoken in a short video; it can be Ukrainian, Russian or English): {text}",
+    "screen": "TEXT TO JUDGE (burned into a short video; it can be Ukrainian, Russian or English): {text}",
+    "before": "EARLIER SPEECH IN THE SAME VIDEO (context only, do not judge it): {before}",
+    "screen_text": "TEXT BURNED INTO THE VIDEO (context only, do not judge it): {screen_text}",
+    "description": "VIDEO CAPTION (context only, do not judge it): {description}"
+  },
+  "common": "Judge only the SENTENCE TO JUDGE or TEXT TO JUDGE, in its own language. Use the context only to see the topic and who speaks. Judge the technique, never whether the claim is true. ",
+  "gates": {
+    "war": {
+      "instructions": "Is the text to judge, read with its context, about the Russia-Ukraine war or its politics: the fighting, the armies, mobilisation, occupation, refugees, sanctions, peace talks, or what the governments of Russia, Ukraine and their allies say and do about the war?",
+      "criteria": {
+        "true": "The topic is the war or its politics, also when the text names it only with a pronoun or a nickname and the context shows the topic.",
+        "false": "The topic is something else, such as daily life, food, products, sport, entertainment, weather, or a conflict or election that has no link to the Russia-Ukraine war."
+      }
+    },
+    "quote": {
+      "instructions": "Does the speaker report, quote, debunk or mock the claim in the text to judge, instead of making the claim in their own voice?",
+      "criteria": {
+        "true": "The speaker passes on what someone else said or announced without saying it is true ('the ministry said that ...', 'officials announced ...', 'the mayor told the paper ...', 'they claim that ...'), states a claim in order to refute it ('Pro-Kremlin channels claim X. That is false.', 'X never happened, the story came from a fake site'), labels it as propaganda or a fake, or uses clear sarcasm or satire to mock it.",
+        "false": "The speaker makes the claim in their own voice, also when they add a vague source and stand behind it ('people are saying X, and it is real', 'experts say', 'a friend in the ministry told me', 'research shows')."
+      }
+    },
+    "claim": {
+      "instructions": "Does the text to judge make a specific factual claim about public life that a fact checker could check against news or official sources: a number, a date, a named event, or a named person, group, institution or country that did a concrete thing? The speaker must mean it as real.",
+      "criteria": {
+        "true": "A concrete, checkable statement of fact, such as '22 men were held in the building', 'Russia fired 40 missiles at Kyiv on Tuesday' or 'Zelensky signed the law yesterday'.",
+        "false": "An opinion, a feeling, a question, a prediction, a vague statement without a checkable detail ('things are getting worse', 'nobody knows'), a call to act, or a claim that the speaker quotes in order to debunk it. Also false: the speaker's own life or experience ('I paid my tax bill today', 'my train was cancelled again', 'my sister got her booster last week'), even when it touches public life; and a joke, parody or absurd 'breaking news' that nobody means as fact ('parliament has replaced all ministers with golden retrievers', 'the tax office now accepts payment in cinnamon buns')."
+      }
+    },
+    "public": {
+      "instructions": "Is the text to judge, read with its context, about public affairs: politics, war, government, elections, courts, public health, the economy or public money, or a news event?",
+      "criteria": {
+        "true": "The topic is public affairs or news: a government, a politician, a war, a law, an election, a court case, public health, public money, prices and the economy, or a news event.",
+        "false": "The topic is private or entertainment: sport results, recipes and food, products and shopping, games, celebrities' private lives, jokes, daily life, travel tips or a personal story."
+      }
+    }
+  },
+  "techniques": [
+    {
+      "id": "loaded_language",
+      "label": "Loaded language",
+      "short": "Loaded",
+      "why": "Strong words, no source.",
+      "explain": "Strong, emotional words carry the sentence, and it names no source.",
+      "instructions": "Does the text to judge use loaded language: words or phrases with a strong emotional charge, chosen to make the listener feel for or against a person, group or event, where neutral words could state the same facts?",
+      "criteria": {
+        "true": "The speaker's own words are charged labels or images, such as 'orcs', 'Nazi regime', 'Kyiv junta', 'puppets', 'butchers', 'packing men into vans like cattle', 'bloody dictator', and they carry the claim.",
+        "false": "The words are neutral or descriptive; or the strong word is the plain factual name for what happened ('killed', 'destroyed', 'missile strike') with no extra colour; or the charged words are only inside a quote that the speaker reports or rejects; or a person tells their own grief or anger about their own loss without labelling a group."
+      }
+    },
+    {
+      "id": "glittering_generalities",
+      "label": "Glittering generalities",
+      "short": "Big words",
+      "why": "Big words, no content.",
+      "explain": "Grand, positive words that sound good but say nothing you can check.",
+      "instructions": "Does the text to judge use glittering generalities: big positive abstract words (freedom, peace, justice, truth, unity, the motherland, traditional values, civilisation, heroes, our great nation) to win agreement and solidarity, without a specific fact, plan or argument?",
+      "criteria": {
+        "true": "Abstract positive words or slogans carry the text and no concrete information comes with them, such as 'We are united as never before, together we are strong, we will defend our freedom' or 'Russia brings peace and true values'.",
+        "false": "The abstract word comes with a concrete claim, number, plan or event; or the text is a plain statement of facts; or it is a neutral report of what someone said; or it is a short ritual greeting that carries no claim."
+      }
+    },
+    {
+      "id": "euphoria",
+      "label": "Euphoria",
+      "short": "Euphoria",
+      "why": "Good mood, no reason.",
+      "explain": "It builds a happy, proud mood that has no reason in the facts.",
+      "instructions": "Does the text to judge use euphoria: does it celebrate a success or good news in a triumphant, exaggerated tone to lift morale and pride, beyond what the stated facts support?",
+      "criteria": {
+        "true": "Victory talk and celebration carry the text, such as 'We smashed them to zero on all three fronts, every crossing a success, the enemy is running everywhere!' or 'The sanctions failed, our economy is booming like never before!'.",
+        "false": "A sober report of a gain or a loss, with places, numbers or sources and a calm tone; quiet relief or thanks; a neutral military summary."
+      }
+    },
+    {
+      "id": "appeal_to_fear",
+      "label": "Appeal to fear",
+      "short": "Fear",
+      "why": "Fear before thought.",
+      "explain": "It names a danger to you and gives no reason to expect it.",
+      "instructions": "Does the text to judge appeal to fear: does it warn of a threat to the listener, their family or their group, exaggerated or without evidence, to push a view or an action?",
+      "criteria": {
+        "true": "A dramatic threat carries the text, such as 'They will block the bank cards of every man abroad', 'Your sons are next', 'NATO will drag all of Europe into nuclear war'.",
+        "false": "A factual warning from a named authority with practical advice ('Air raid alert in Kyiv, go to a shelter'); a report of something that already happened; a person telling their own fear or grief as their experience."
+      }
+    },
+    {
+      "id": "fud",
+      "label": "Doubt",
+      "short": "Doubt",
+      "why": "Doubt, no evidence.",
+      "explain": "It casts doubt on a person or a source and shows no evidence for the doubt.",
+      "instructions": "Does the text to judge sow fear, uncertainty and doubt (FUD): does it make the listener doubt a person, an institution, an ally, an event or the outcome of the war, with no evidence, so they lose trust or hope?",
+      "criteria": {
+        "true": "Doubt without evidence carries the text, such as 'Was he really in Bakhmut? Nobody will ever know, it was all edited', 'There are no reserves left', 'The West will drop you any day now', 'They will not tell you this on TV'.",
+        "false": "The doubt rests on a named source or evidence; a journalist says a claim cannot be verified yet; an honest question asked in good faith."
+      }
+    },
+    {
+      "id": "bandwagon",
+      "label": "Bandwagon",
+      "short": "Bandwagon",
+      "why": "Says everyone agrees.",
+      "explain": "It says that everyone already agrees, so you should join.",
+      "instructions": "Does the text to judge use the bandwagon technique: does it say or imply that everyone, the majority, or a fast-growing number of people already think or do this, as the reason the listener should agree or join?",
+      "criteria": {
+        "true": "The crowd is the argument, such as 'Everyone already understands that the sanctions failed', 'All of Germany is turning against helping Ukraine', 'Millions already see the truth'.",
+        "false": "A poll or count is reported with its source; the text says what one named group did without urging the listener to join."
+      }
+    },
+    {
+      "id": "cliche",
+      "label": "Cliche",
+      "short": "Cliche",
+      "why": "A phrase that ends thought.",
+      "explain": "A stock phrase that sounds final and stops the question.",
+      "instructions": "Does the text to judge use a thought-terminating cliche: a stock phrase that closes the question instead of answering it, so the listener stops thinking?",
+      "criteria": {
+        "true": "A dismissive stock phrase does the work, such as 'It is not so simple' (vse ne tak odnoznachno), 'Where were you for eight years?', 'Time will put everything in its place', 'We will never know the whole truth', 'It is all information war'.",
+        "false": "A common idiom used in passing that does not stop a discussion; a slogan that is the topic of a report, not the speaker's answer to a question."
+      }
+    },
+    {
+      "id": "whataboutism",
+      "label": "Whataboutism",
+      "short": "Whatabout",
+      "why": "Points at others instead.",
+      "explain": "It answers a point by pointing at someone else, not at the point.",
+      "instructions": "Does the text to judge use whataboutism: does it answer a criticism or accusation by pointing at a similar wrong by the other side or by someone else, instead of answering it?",
+      "criteria": {
+        "true": "A counter-accusation replaces the answer, such as 'And what about Iraq and Yugoslavia?', 'The same happened in Odesa, so is that a crime too, or is that different?', 'Look at your own country first'.",
+        "false": "A comparison that is the subject of a reasoned analysis; a neutral list of events by both sides; a direct answer to the criticism."
+      }
+    },
+    {
+      "id": "cherry_picking",
+      "label": "Cherry picking",
+      "short": "One side",
+      "why": "Shows one side only.",
+      "explain": "It picks the facts that fit and leaves out the ones that do not.",
+      "instructions": "Does the text to judge use cherry picking: does it present a selected fact, figure or example as if it proved a broad conclusion, while it leaves out obvious context or counter-evidence?",
+      "criteria": {
+        "true": "One chosen detail stands in for the whole, such as 'Western Ukraine does not even reach half its mobilisation plan, so the whole mobilisation has failed', or one quote taken out of context as proof of a broad plan.",
+        "false": "A single fact stated without a broad conclusion; a balanced report that gives both sides or the full numbers."
+      }
+    },
+    {
+      "id": "straw_man",
+      "label": "Straw man",
+      "short": "Straw man",
+      "why": "Answers a claim nobody made.",
+      "explain": "It answers a weaker claim than the one the other side made.",
+      "instructions": "Does the text to judge use a straw man: does it restate the other side's position as a weaker, extreme or distorted version they did not claim, and attack that version?",
+      "criteria": {
+        "true": "A distorted version of the opponent's view is attacked, such as 'They say gender-sensitive teaching, they mean teaching our children perversion', 'Kyiv wants every Russian speaker gone', 'So you want Europe to freeze for Zelensky?'.",
+        "false": "The opponent's view is stated fairly and argued against; the opponent's statement is reported as it was made."
+      }
+    }
+  ],
+  "router_prompt": "You label manipulation techniques in short war-related social video content. You name techniques; you never judge whether a claim is true. Read the CONTENT block, then answer every QUESTION with a probability from 0 to 1 that the answer is yes. Follow the true and false criteria of each question exactly. Reply with one JSON object only, no prose, with exactly these keys and number values: {keys}."
+}

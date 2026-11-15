@@ -1,0 +1,290 @@
+{"id": "asserted_false-000", "text": "the WHO just admitted that the covid vaccine changes your DNA, it's in their own report", "label": "check", "category": "asserted_false", "split": "dev"}
+{"id": "asserted_false-001", "text": "So Finland literally banned cash last month, you can't pay with coins anywhere anymore", "label": "check", "category": "asserted_false", "split": "dev"}
+{"id": "asserted_false-002", "text": "the EU is going to make it illegal to grow your own vegetables starting January", "label": "check", "category": "asserted_false", "split": "test"}
+{"id": "asserted_false-003", "text": "Bill Gates bought up 80 percent of all farmland in the US, that's why food is so expensive", "label": "check", "category": "asserted_false", "split": "dev"}
+{"id": "asserted_false-004", "text": "5G towers were switched on in Wuhan two weeks before the outbreak started", "label": "check", "category": "asserted_false", "split": "dev"}
+{"id": "asserted_false-005", "text": "Canada passed a law that lets the government take your kids if you don't use their pronouns", "label": "check", "category": "asserted_false", "split": "test"}
+{"id": "asserted_false-006", "text": "Ukraine sold the Javelins we gave them on the dark web, there are listings with serial numbers", "label": "check", "category": "asserted_false", "split": "dev"}
+{"id": "asserted_false-007", "text": "the Pentagon confirmed that the Maui fires were started by a directed energy weapon", "label": "check", "category": "asserted_false", "split": "dev"}
+{"id": "asserted_false-008", "text": "Sweden has the highest rape rate in the world now because of immigration", "label": "check", "category": "asserted_false", "split": "test"}
+{"id": "asserted_false-009", "text": "inflation in the UK hit 25 percent this year, the highest since the war", "label": "check", "category": "asserted_false", "split": "dev"}
+{"id": "asserted_false-010", "text": "Germany shut down all of its hospitals' gas heating to send gas to Ukraine", "label": "check", "category": "asserted_false", "split": "dev"}
+{"id": "asserted_false-011", "text": "the new digital euro will expire if you don't spend it within 90 days, the ECB said so", "label": "check", "category": "asserted_false", "split": "dev"}
+{"id": "asserted_false-012", "text": "Zelensky bought a 75 million dollar villa in Egypt with aid money", "label": "check", "category": "asserted_false", "split": "test"}
+{"id": "asserted_false-013", "text": "France just raised the retirement age to 70, Macron signed it on Tuesday", "label": "check", "category": "asserted_false", "split": "dev"}
+{"id": "asserted_false-014", "text": "Over 40,000 people died from the vaccine in Norway alone, the health institute hid the numbers", "label": "check", "category": "asserted_false", "split": "dev"}
+{"id": "asserted_false-015", "text": "Taylor Swift was paid 10 million dollars by the Pentagon to tell people to vote", "label": "check", "category": "asserted_false", "split": "test"}
+{"id": "asserted_false-016", "text": "the Amazon rainforest has actually grown by 30 percent since 2010", "label": "check", "category": "asserted_false", "split": "dev"}
+{"id": "asserted_false-017", "text": "Japan stopped vaccinating children completely in 2023 after the deaths", "label": "check", "category": "asserted_false", "split": "dev"}
+{"id": "asserted_false-018", "text": "Pfizer's CEO was arrested in Belgium last week for fraud", "label": "check", "category": "asserted_false", "split": "test"}
+{"id": "asserted_false-019", "text": "the US printed 80 percent of all dollars that exist in just the last two years", "label": "check", "category": "asserted_false", "split": "dev"}
+{"id": "asserted_false-020", "text": "Norway is going to ban petrol cars from the roads entirely next year, not just new sales", "label": "check", "category": "asserted_false", "split": "dev"}
+{"id": "asserted_false-021", "text": "Russia lost one point five million soldiers just in the last month", "label": "check", "category": "asserted_false", "split": "dev"}
+{"id": "asserted_false-022", "text": "the UN is planning to put a tax on every cow and pig in Europe from 2027", "label": "check", "category": "asserted_false", "split": "test"}
+{"id": "asserted_false-023", "text": "China owns the Port of Rotterdam now, they bought it in secret", "label": "check", "category": "asserted_false", "split": "dev"}
+{"id": "asserted_false-024", "text": "Greta Thunberg's family owns a big oil company in Sweden", "label": "check", "category": "asserted_false", "split": "dev"}
+{"id": "asserted_false-025", "text": "the voting machines in Georgia switched 3 million votes, a judge ruled that last week", "label": "check", "category": "asserted_false", "split": "test"}
+{"id": "asserted_false-026", "text": "drinking a teaspoon of baking soda a day cures cancer, oncologists don't want you to know", "label": "check", "category": "asserted_false", "split": "dev"}
+{"id": "asserted_false-027", "text": "The ECB just announced it will freeze all savings accounts over 100,000 euros", "label": "check", "category": "asserted_false", "split": "dev"}
+{"id": "asserted_false-028", "text": "the moon landing footage was shot in a studio in Nevada, NASA admitted it in 2019", "label": "check", "category": "asserted_false", "split": "test"}
+{"id": "asserted_false-029", "text": "Ireland gives every asylum seeker a free house and 2,000 euros a month", "label": "check", "category": "asserted_false", "split": "dev"}
+{"id": "asserted_false-030", "text": "the Bank of England stopped printing paper notes completely this summer", "label": "check", "category": "asserted_false", "split": "dev"}
+{"id": "asserted_false-031", "text": "Microsoft cancelled Windows for all of Russia and turned off every computer there", "label": "check", "category": "asserted_false", "split": "dev"}
+{"id": "asserted_false-032", "text": "the Gulf Stream already stopped in March, scientists confirmed it", "label": "check", "category": "asserted_false", "split": "test"}
+{"id": "asserted_false-033", "text": "they found that wind turbines killed more birds last year than cats did, that's the official figure", "label": "check", "category": "asserted_false", "split": "dev"}
+{"id": "asserted_false-034", "text": "Denmark now pays people 1,000 euros to give up their car", "label": "check", "category": "asserted_false", "split": "dev"}
+{"id": "asserted_false-035", "text": "the new EU law means your car will be remotely switched off if you drive more than 100 kilometres a week", "label": "check", "category": "asserted_false", "split": "test"}
+{"id": "asserted_false-036", "text": "Elon Musk bought CNN for 30 billion dollars", "label": "check", "category": "asserted_false", "split": "dev"}
+{"id": "asserted_false-037", "text": "the Supreme Court ruled last week that income tax is unconstitutional", "label": "check", "category": "asserted_false", "split": "dev"}
+{"id": "asserted_false-038", "text": "Every single member of the Finnish parliament got a 40 percent pay rise this year", "label": "check", "category": "asserted_false", "split": "test"}
+{"id": "asserted_false-039", "text": "the Netherlands closed half of its farms by law in 2024", "label": "check", "category": "asserted_false", "split": "dev"}
+{"id": "asserted_true-000", "text": "Finland joined NATO in April 2023, that's when it became the 31st member", "label": "check", "category": "asserted_true", "split": "dev"}
+{"id": "asserted_true-001", "text": "the ECB raised interest rates ten times in a row between 2022 and 2023", "label": "check", "category": "asserted_true", "split": "dev"}
+{"id": "asserted_true-002", "text": "Russia launched its full scale invasion of Ukraine on February 24th 2022", "label": "check", "category": "asserted_true", "split": "test"}
+{"id": "asserted_true-003", "text": "the UK left the European Union officially on January 31st 2020", "label": "check", "category": "asserted_true", "split": "dev"}
+{"id": "asserted_true-004", "text": "Over 6 million Ukrainians have registered as refugees in Europe", "label": "check", "category": "asserted_true", "split": "dev"}
+{"id": "asserted_true-005", "text": "Norway's oil fund is worth more than 1.5 trillion dollars now", "label": "check", "category": "asserted_true", "split": "test"}
+{"id": "asserted_true-006", "text": "the US Supreme Court overturned Roe v Wade in June 2022", "label": "check", "category": "asserted_true", "split": "dev"}
+{"id": "asserted_true-007", "text": "Sweden became NATO's 32nd member in March 2024", "label": "check", "category": "asserted_true", "split": "dev"}
+{"id": "asserted_true-008", "text": "Inflation in the euro area peaked at over 10 percent in October 2022", "label": "check", "category": "asserted_true", "split": "test"}
+{"id": "asserted_true-009", "text": "the Paris agreement aims to keep warming well below 2 degrees", "label": "check", "category": "asserted_true", "split": "dev"}
+{"id": "asserted_true-010", "text": "Germany shut down its last three nuclear plants in April 2023", "label": "check", "category": "asserted_true", "split": "dev"}
+{"id": "asserted_true-011", "text": "the measles vaccine prevented an estimated 57 million deaths since 2000", "label": "check", "category": "asserted_true", "split": "dev"}
+{"id": "asserted_true-012", "text": "so Croatia adopted the euro on January 1st 2023", "label": "check", "category": "asserted_true", "split": "test"}
+{"id": "asserted_true-013", "text": "the EU AI Act was approved by the European Parliament in March 2024", "label": "check", "category": "asserted_true", "split": "dev"}
+{"id": "asserted_true-014", "text": "Joe Biden dropped out of the presidential race in July 2024", "label": "check", "category": "asserted_true", "split": "dev"}
+{"id": "asserted_true-015", "text": "the minimum wage in Germany went up to 12 euros 41 in 2024", "label": "check", "category": "asserted_true", "split": "test"}
+{"id": "asserted_true-016", "text": "Hungary's Viktor Orban has been prime minister since 2010", "label": "check", "category": "asserted_true", "split": "dev"}
+{"id": "asserted_true-017", "text": "the Kakhovka dam was destroyed in June 2023 and flooded huge areas", "label": "check", "category": "asserted_true", "split": "dev"}
+{"id": "asserted_true-018", "text": "Tobacco kills more than 8 million people every year", "label": "check", "category": "asserted_true", "split": "test"}
+{"id": "asserted_true-019", "text": "Iceland had a volcanic eruption near Grindavik that forced the whole town to evacuate", "label": "check", "category": "asserted_true", "split": "dev"}
+{"id": "asserted_true-020", "text": "the Bank of Japan ended negative interest rates in March 2024, the first hike in 17 years", "label": "check", "category": "asserted_true", "split": "dev"}
+{"id": "asserted_true-021", "text": "the Danish parliament voted to abolish a public holiday, Great Prayer Day, to fund defence", "label": "check", "category": "asserted_true", "split": "dev"}
+{"id": "asserted_true-022", "text": "Estonia was the first country to allow online voting in national elections", "label": "check", "category": "asserted_true", "split": "test"}
+{"id": "asserted_true-023", "text": "Around 700 million people live in extreme poverty right now", "label": "check", "category": "asserted_true", "split": "dev"}
+{"id": "asserted_true-024", "text": "Spain's government approved a four and a half day work week trial for companies", "label": "check", "category": "asserted_true", "split": "dev"}
+{"id": "asserted_true-025", "text": "2023 was the hottest year on record for the whole planet", "label": "check", "category": "asserted_true", "split": "test"}
+{"id": "asserted_true-026", "text": "Argentina's inflation went above 200 percent in 2023", "label": "check", "category": "asserted_true", "split": "dev"}
+{"id": "asserted_true-027", "text": "France was the first country to put abortion rights in its constitution, in March 2024", "label": "check", "category": "asserted_true", "split": "dev"}
+{"id": "asserted_true-028", "text": "Norway gives free university tuition even to students from outside the EU at public universities, wait no they stopped that in 2023", "label": "check", "category": "asserted_true", "split": "test"}
+{"id": "asserted_true-029", "text": "the Finnish government cut the adult education allowance completely from 2024", "label": "check", "category": "asserted_true", "split": "dev"}
+{"id": "asserted_true-030", "text": "Meta was fined 1.2 billion euros by the Irish data regulator in 2023", "label": "check", "category": "asserted_true", "split": "dev"}
+{"id": "asserted_true-031", "text": "Lithuania stopped importing Russian gas in 2022, the first EU country to do it", "label": "check", "category": "asserted_true", "split": "dev"}
+{"id": "asserted_true-032", "text": "Twitter was bought by Elon Musk for 44 billion dollars in 2022", "label": "check", "category": "asserted_true", "split": "test"}
+{"id": "asserted_true-033", "text": "the EU agreed to ban the sale of new petrol and diesel cars from 2035", "label": "check", "category": "asserted_true", "split": "dev"}
+{"id": "asserted_true-034", "text": "UK prime minister Liz Truss resigned after just 45 days", "label": "check", "category": "asserted_true", "split": "dev"}
+{"id": "vague_source_assert-000", "text": "people are saying the government is quietly adding fluoride to bottled water now, and it's true", "label": "check", "category": "vague_source_assert", "split": "dev"}
+{"id": "vague_source_assert-001", "text": "experts say one in three young people in Finland can't afford rent anymore", "label": "check", "category": "vague_source_assert", "split": "dev"}
+{"id": "vague_source_assert-002", "text": "my sources tell me the army is calling up 50,000 reservists next month", "label": "check", "category": "vague_source_assert", "split": "test"}
+{"id": "vague_source_assert-003", "text": "apparently the new law makes it a crime to post memes about politicians in the UK, yeah that's real", "label": "check", "category": "vague_source_assert", "split": "dev"}
+{"id": "vague_source_assert-004", "text": "everyone knows the EU paid 2 billion euros for vaccines that were never delivered", "label": "check", "category": "vague_source_assert", "split": "dev"}
+{"id": "vague_source_assert-005", "text": "a doctor friend told me hospitals get paid 39,000 dollars for every covid patient on a ventilator, which is true", "label": "check", "category": "vague_source_assert", "split": "test"}
+{"id": "vague_source_assert-006", "text": "studies show that 70 percent of food in supermarkets has microplastics", "label": "check", "category": "vague_source_assert", "split": "dev"}
+{"id": "vague_source_assert-007", "text": "insiders say Tesla is closing its Berlin factory next year", "label": "check", "category": "vague_source_assert", "split": "dev"}
+{"id": "vague_source_assert-008", "text": "I read that Norway is giving each citizen 10,000 kroner because of the oil fund, it's happening", "label": "check", "category": "vague_source_assert", "split": "test"}
+{"id": "vague_source_assert-009", "text": "word is the fuel tax goes up by 20 cents a litre in January", "label": "check", "category": "vague_source_assert", "split": "dev"}
+{"id": "opinion-000", "text": "honestly I think this government is the worst we've ever had", "label": "skip", "category": "opinion", "split": "dev"}
+{"id": "opinion-001", "text": "the EU is just a bunch of bureaucrats who don't care about normal people", "label": "skip", "category": "opinion", "split": "dev"}
+{"id": "opinion-002", "text": "I really believe nuclear power is the future, I don't get why people are scared of it", "label": "skip", "category": "opinion", "split": "test"}
+{"id": "opinion-003", "text": "Immigration has been a total disaster and nobody wants to admit it", "label": "skip", "category": "opinion", "split": "dev"}
+{"id": "opinion-004", "text": "Biden was way too old to run, that's just my opinion", "label": "skip", "category": "opinion", "split": "dev"}
+{"id": "opinion-005", "text": "I think raising taxes on the rich is completely fair", "label": "skip", "category": "opinion", "split": "test"}
+{"id": "opinion-006", "text": "climate activists gluing themselves to roads is so counterproductive", "label": "skip", "category": "opinion", "split": "dev"}
+{"id": "opinion-007", "text": "the media is so biased it's actually insane", "label": "skip", "category": "opinion", "split": "dev"}
+{"id": "opinion-008", "text": "Putin is a war criminal, period", "label": "skip", "category": "opinion", "split": "test"}
+{"id": "opinion-009", "text": "I feel like nobody in politics actually listens to young people", "label": "skip", "category": "opinion", "split": "dev"}
+{"id": "opinion-010", "text": "electric cars are honestly overrated", "label": "skip", "category": "opinion", "split": "dev"}
+{"id": "opinion-011", "text": "the police in this country are doing a great job and nobody says thanks", "label": "skip", "category": "opinion", "split": "dev"}
+{"id": "opinion-012", "text": "Universal basic income would fix so much, I'm convinced", "label": "skip", "category": "opinion", "split": "test"}
+{"id": "opinion-013", "text": "I just think the monarchy is outdated", "label": "skip", "category": "opinion", "split": "dev"}
+{"id": "opinion-014", "text": "sanctions clearly aren't working, they hurt us more than them", "label": "skip", "category": "opinion", "split": "dev"}
+{"id": "opinion-015", "text": "I trust doctors more than random people on the internet, sorry not sorry", "label": "skip", "category": "opinion", "split": "test"}
+{"id": "opinion-016", "text": "the housing market is broken, like completely broken", "label": "skip", "category": "opinion", "split": "dev"}
+{"id": "opinion-017", "text": "voting is pointless if both parties are the same", "label": "skip", "category": "opinion", "split": "dev"}
+{"id": "opinion-018", "text": "this new prime minister seems way more competent to be honest", "label": "skip", "category": "opinion", "split": "test"}
+{"id": "opinion-019", "text": "the school system is failing our kids and it makes me so angry", "label": "skip", "category": "opinion", "split": "dev"}
+{"id": "opinion-020", "text": "nato expansion was a mistake in my view", "label": "skip", "category": "opinion", "split": "dev"}
+{"id": "opinion-021", "text": "Social media should be banned for under 16s, I'd vote for that tomorrow", "label": "skip", "category": "opinion", "split": "dev"}
+{"id": "opinion-022", "text": "Tax money should go to healthcare not weapons", "label": "skip", "category": "opinion", "split": "test"}
+{"id": "opinion-023", "text": "things are getting worse every year", "label": "skip", "category": "opinion", "split": "dev"}
+{"id": "opinion-024", "text": "nobody really knows what's going on in that war", "label": "skip", "category": "opinion", "split": "dev"}
+{"id": "prediction-000", "text": "mark my words, the euro will collapse within five years", "label": "skip", "category": "prediction", "split": "dev"}
+{"id": "prediction-001", "text": "I bet the government falls before Christmas", "label": "skip", "category": "prediction", "split": "dev"}
+{"id": "prediction-002", "text": "inflation is going to go crazy again next year", "label": "skip", "category": "prediction", "split": "test"}
+{"id": "prediction-003", "text": "Trump is going to win again, watch", "label": "skip", "category": "prediction", "split": "dev"}
+{"id": "prediction-004", "text": "petrol will be 3 euros a litre by summer, guaranteed", "label": "skip", "category": "prediction", "split": "dev"}
+{"id": "prediction-005", "text": "this war will be over by spring I think", "label": "skip", "category": "prediction", "split": "test"}
+{"id": "prediction-006", "text": "house prices are about to crash hard", "label": "skip", "category": "prediction", "split": "dev"}
+{"id": "prediction-007", "text": "AI is going to take half of all jobs in ten years", "label": "skip", "category": "prediction", "split": "dev"}
+{"id": "prediction-008", "text": "they will bring back lockdowns this winter, just wait", "label": "skip", "category": "prediction", "split": "test"}
+{"id": "prediction-009", "text": "China will invade Taiwan by 2027", "label": "skip", "category": "prediction", "split": "dev"}
+{"id": "quoted_reported-000", "text": "The finance ministry said on Monday that the deficit will reach 4 percent this year", "label": "skip", "category": "quoted_reported", "split": "dev"}
+{"id": "quoted_reported-001", "text": "According to Reuters, the talks in Geneva ended without an agreement", "label": "skip", "category": "quoted_reported", "split": "dev"}
+{"id": "quoted_reported-002", "text": "the prime minister told reporters that taxes would not go up", "label": "skip", "category": "quoted_reported", "split": "test"}
+{"id": "quoted_reported-003", "text": "Russia's defence ministry claims it shot down 30 drones over Belgorod", "label": "skip", "category": "quoted_reported", "split": "dev"}
+{"id": "quoted_reported-004", "text": "the police say two people were arrested after the protest", "label": "skip", "category": "quoted_reported", "split": "dev"}
+{"id": "quoted_reported-005", "text": "the WHO stated that the risk to the general public remains low", "label": "skip", "category": "quoted_reported", "split": "test"}
+{"id": "quoted_reported-006", "text": "Kremlin spokesman Peskov said the talks were not on the agenda", "label": "skip", "category": "quoted_reported", "split": "dev"}
+{"id": "quoted_reported-007", "text": "The BBC reports that the strike will continue into next week", "label": "skip", "category": "quoted_reported", "split": "dev"}
+{"id": "quoted_reported-008", "text": "the company said in a statement that no customer data was leaked", "label": "skip", "category": "quoted_reported", "split": "test"}
+{"id": "quoted_reported-009", "text": "Ukraine's general staff reported 1,200 Russian casualties in the last day, that's their figure", "label": "skip", "category": "quoted_reported", "split": "dev"}
+{"id": "quoted_reported-010", "text": "the governor said all schools will be closed tomorrow because of the storm", "label": "skip", "category": "quoted_reported", "split": "dev"}
+{"id": "quoted_reported-011", "text": "according to the IMF the global economy will grow 3 percent this year", "label": "skip", "category": "quoted_reported", "split": "dev"}
+{"id": "quoted_reported-012", "text": "the opposition leader claimed the election was rigged, the electoral commission rejected that", "label": "skip", "category": "quoted_reported", "split": "test"}
+{"id": "quoted_reported-013", "text": "The minister of health announced a new vaccine campaign for the autumn", "label": "skip", "category": "quoted_reported", "split": "dev"}
+{"id": "quoted_reported-014", "text": "the US State Department said it was deeply concerned about the arrests", "label": "skip", "category": "quoted_reported", "split": "dev"}
+{"id": "quoted_reported-015", "text": "and the European Commission says it will propose new rules in March", "label": "skip", "category": "quoted_reported", "split": "test"}
+{"id": "quoted_reported-016", "text": "they say that the new tax will only hit people earning over 100k", "label": "skip", "category": "quoted_reported", "split": "dev"}
+{"id": "quoted_reported-017", "text": "the Chinese foreign ministry said the reports were groundless", "label": "skip", "category": "quoted_reported", "split": "dev"}
+{"id": "quoted_reported-018", "text": "Statistics Finland reported unemployment at 8 point 5 percent in October", "label": "skip", "category": "quoted_reported", "split": "test"}
+{"id": "quoted_reported-019", "text": "the union says 90 percent of workers voted for the strike", "label": "skip", "category": "quoted_reported", "split": "dev"}
+{"id": "quoted_reported-020", "text": "the court said it would announce its ruling next month", "label": "skip", "category": "quoted_reported", "split": "dev"}
+{"id": "quoted_reported-021", "text": "NATO's secretary general said member states must spend more on defence", "label": "skip", "category": "quoted_reported", "split": "dev"}
+{"id": "quoted_reported-022", "text": "the White House press secretary said the president was not briefed", "label": "skip", "category": "quoted_reported", "split": "test"}
+{"id": "quoted_reported-023", "text": "officials say the fire is now under control", "label": "skip", "category": "quoted_reported", "split": "dev"}
+{"id": "quoted_reported-024", "text": "the airline claims the delays were caused by air traffic control", "label": "skip", "category": "quoted_reported", "split": "dev"}
+{"id": "debunk-000", "text": "the WHO admitted that the covid vaccine changes your DNA", "label": "skip", "category": "debunk", "split": "dev", "context": "Okay this video has 3 million views and it's completely false. It says"}
+{"id": "debunk-001", "text": "Finland banned cash last month", "label": "skip", "category": "debunk", "split": "dev", "context": "Fact check time. There's a viral clip claiming that"}
+{"id": "debunk-002", "text": "No, the EU is not making it illegal to grow your own vegetables, that's a total myth", "label": "skip", "category": "debunk", "split": "test"}
+{"id": "debunk-003", "text": "they're saying Bill Gates owns most of the farmland in America", "label": "skip", "category": "debunk", "split": "dev", "context": "Let's debunk this one."}
+{"id": "debunk-004", "text": "5G caused covid", "label": "skip", "category": "debunk", "split": "dev", "context": "I keep seeing this claim, and I want to be really clear it's nonsense:"}
+{"id": "debunk-005", "text": "so this guy says Ukraine is selling Javelins on the dark web, which multiple investigations found zero evidence of", "label": "skip", "category": "debunk", "split": "test"}
+{"id": "debunk-006", "text": "the Maui fires were started by a laser weapon from space", "label": "skip", "category": "debunk", "split": "dev", "context": "This is the dumbest conspiracy theory of the year. People actually believe"}
+{"id": "debunk-007", "text": "that claim that the digital euro expires after 90 days is fake, the ECB never said anything like that", "label": "skip", "category": "debunk", "split": "dev"}
+{"id": "debunk-008", "text": "Zelensky bought a villa in Egypt", "label": "skip", "category": "debunk", "split": "test", "context": "A fake news site made up a story, and now millions think"}
+{"id": "debunk-009", "text": "it says 40,000 people died from the vaccine in Norway", "label": "skip", "category": "debunk", "split": "dev", "context": "This screenshot is fabricated. Look at it,"}
+{"id": "debunk-010", "text": "the voting machines in Georgia switched millions of votes", "label": "skip", "category": "debunk", "split": "dev", "context": "Every court threw this out. The claim was that"}
+{"id": "debunk-011", "text": "baking soda does not cure cancer, please don't believe these videos", "label": "skip", "category": "debunk", "split": "dev"}
+{"id": "debunk-012", "text": "the moon landing was filmed in Nevada", "label": "skip", "category": "debunk", "split": "test", "context": "Myth number three, and this one won't die:"}
+{"id": "debunk-013", "text": "the claim is that Ireland gives every asylum seeker a free house, and that is simply not true", "label": "skip", "category": "debunk", "split": "dev"}
+{"id": "debunk-014", "text": "the Gulf Stream already stopped", "label": "skip", "category": "debunk", "split": "dev", "context": "No, scientists did not confirm that"}
+{"id": "debunk-015", "text": "Pfizer's CEO was arrested in Belgium", "label": "skip", "category": "debunk", "split": "test", "context": "Reuters checked this and found no record that"}
+{"id": "debunk-016", "text": "Taylor Swift is a Pentagon psyop paid to make people vote", "label": "skip", "category": "debunk", "split": "dev", "context": "Conspiracy theorists are claiming, again with no evidence, that"}
+{"id": "debunk-017", "text": "the Amazon has grown by 30 percent", "label": "skip", "category": "debunk", "split": "dev", "context": "This chart is going viral but it's misleading, it claims"}
+{"id": "debunk-018", "text": "Sweden has the highest rape rate in the world", "label": "skip", "category": "debunk", "split": "test", "context": "Let me explain why this statistic is wrong. People share that"}
+{"id": "debunk-019", "text": "the Supreme Court ruled income tax is unconstitutional", "label": "skip", "category": "debunk", "split": "dev", "context": "That's a satire site, guys. It wasn't real. The headline said"}
+{"id": "debunk-020", "text": "so the post says Germany shut off hospital heating to send gas to Ukraine. That never happened", "label": "skip", "category": "debunk", "split": "dev"}
+{"id": "debunk-021", "text": "Elon Musk did not buy CNN, that was a parody account", "label": "skip", "category": "debunk", "split": "dev"}
+{"id": "debunk-022", "text": "they said Denmark pays you 1,000 euros to give up your car", "label": "skip", "category": "debunk", "split": "test", "context": "Okay I looked into this and it's false."}
+{"id": "debunk-023", "text": "China owns the Port of Rotterdam", "label": "skip", "category": "debunk", "split": "dev", "context": "Debunking viral claims part 12. Claim:"}
+{"id": "debunk-024", "text": "Microsoft turned off every computer in Russia", "label": "skip", "category": "debunk", "split": "dev", "context": "This is misinformation and here's why. The video says"}
+{"id": "question-000", "text": "did Finland really ban cash or is that fake?", "label": "skip", "category": "question", "split": "dev"}
+{"id": "question-001", "text": "wait is it true that the EU is banning home gardens?", "label": "skip", "category": "question", "split": "dev"}
+{"id": "question-002", "text": "so why is nobody talking about the inflation numbers?", "label": "skip", "category": "question", "split": "test"}
+{"id": "question-003", "text": "Has anyone actually checked whether the vaccine changes your DNA?", "label": "skip", "category": "question", "split": "dev"}
+{"id": "question-004", "text": "what if the moon landing was actually staged?", "label": "skip", "category": "question", "split": "dev"}
+{"id": "question-005", "text": "how is it legal for the government to do this?", "label": "skip", "category": "question", "split": "test"}
+{"id": "question-006", "text": "Is Sweden really the most dangerous country in Europe now?", "label": "skip", "category": "question", "split": "dev"}
+{"id": "question-007", "text": "who actually owns the farmland in America?", "label": "skip", "category": "question", "split": "dev"}
+{"id": "question-008", "text": "can someone explain why petrol costs 2 euros now?", "label": "skip", "category": "question", "split": "test"}
+{"id": "question-009", "text": "is Zelensky actually buying villas with our money or is that propaganda?", "label": "skip", "category": "question", "split": "dev"}
+{"id": "question-010", "text": "why did the ECB raise rates again?", "label": "skip", "category": "question", "split": "dev"}
+{"id": "question-011", "text": "did Biden really drop out or am I confused?", "label": "skip", "category": "question", "split": "dev"}
+{"id": "question-012", "text": "So what happens to my savings if the bank goes bust?", "label": "skip", "category": "question", "split": "test"}
+{"id": "question-013", "text": "does anyone know if the new tax law starts in January?", "label": "skip", "category": "question", "split": "dev"}
+{"id": "question-014", "text": "Why would they close the hospitals in winter?", "label": "skip", "category": "question", "split": "dev"}
+{"id": "question-015", "text": "are wind turbines actually killing all the birds?", "label": "skip", "category": "question", "split": "test"}
+{"id": "question-016", "text": "where does all the aid money go?", "label": "skip", "category": "question", "split": "dev"}
+{"id": "question-017", "text": "is the Gulf Stream really stopping?", "label": "skip", "category": "question", "split": "dev"}
+{"id": "question-018", "text": "what do you guys think about the new prime minister?", "label": "skip", "category": "question", "split": "test"}
+{"id": "question-019", "text": "who voted for this?", "label": "skip", "category": "question", "split": "dev"}
+{"id": "cooking_lifestyle-000", "text": "okay so you add two cups of flour and a pinch of salt and mix it really well", "label": "skip", "category": "cooking_lifestyle", "split": "dev"}
+{"id": "cooking_lifestyle-001", "text": "this cast iron pan holds heat three times longer than a nonstick one", "label": "skip", "category": "cooking_lifestyle", "split": "dev"}
+{"id": "cooking_lifestyle-002", "text": "Bake it at 180 degrees for 25 minutes until it's golden", "label": "skip", "category": "cooking_lifestyle", "split": "test"}
+{"id": "cooking_lifestyle-003", "text": "honey never spoils, they found 3,000 year old honey in Egyptian tombs that was still edible", "label": "skip", "category": "cooking_lifestyle", "split": "dev"}
+{"id": "cooking_lifestyle-004", "text": "this moisturiser has 5 percent niacinamide which is perfect for oily skin", "label": "skip", "category": "cooking_lifestyle", "split": "dev"}
+{"id": "cooking_lifestyle-005", "text": "Avocados have more potassium than bananas, so eat your avocado toast", "label": "skip", "category": "cooking_lifestyle", "split": "test"}
+{"id": "cooking_lifestyle-006", "text": "my morning routine starts with 500 ml of water and ten minutes of stretching", "label": "skip", "category": "cooking_lifestyle", "split": "dev"}
+{"id": "cooking_lifestyle-007", "text": "IKEA's Billy bookcase has sold over 60 million units worldwide", "label": "skip", "category": "cooking_lifestyle", "split": "dev"}
+{"id": "cooking_lifestyle-008", "text": "this air fryer uses 70 percent less oil than a deep fryer", "label": "skip", "category": "cooking_lifestyle", "split": "test"}
+{"id": "cooking_lifestyle-009", "text": "the trick to fluffy rice is rinsing it three times", "label": "skip", "category": "cooking_lifestyle", "split": "dev"}
+{"id": "cooking_lifestyle-010", "text": "Coffee was first discovered in Ethiopia by a goat herder, that's the story anyway", "label": "skip", "category": "cooking_lifestyle", "split": "dev"}
+{"id": "cooking_lifestyle-011", "text": "this outfit is from Zara and the jacket was only 39 euros", "label": "skip", "category": "cooking_lifestyle", "split": "dev"}
+{"id": "cooking_lifestyle-012", "text": "you need to let the dough rest for at least an hour", "label": "skip", "category": "cooking_lifestyle", "split": "test"}
+{"id": "cooking_lifestyle-013", "text": "Messi has won the Ballon d'Or eight times, more than anyone ever", "label": "skip", "category": "cooking_lifestyle", "split": "dev"}
+{"id": "cooking_lifestyle-014", "text": "Real Madrid won the Champions League 15 times", "label": "skip", "category": "cooking_lifestyle", "split": "dev"}
+{"id": "cooking_lifestyle-015", "text": "the iPhone 16 has a 48 megapixel camera and it's insane for food photos", "label": "skip", "category": "cooking_lifestyle", "split": "test"}
+{"id": "cooking_lifestyle-016", "text": "Taylor Swift's Eras tour made over 2 billion dollars", "label": "skip", "category": "cooking_lifestyle", "split": "dev"}
+{"id": "cooking_lifestyle-017", "text": "Lapland has about 200,000 reindeer, we saw so many on our trip", "label": "skip", "category": "cooking_lifestyle", "split": "dev"}
+{"id": "cooking_lifestyle-018", "text": "this hotel in Lisbon was only 60 euros a night with breakfast", "label": "skip", "category": "cooking_lifestyle", "split": "test"}
+{"id": "cooking_lifestyle-019", "text": "dark chocolate with 70 percent cocoa has less sugar than milk chocolate", "label": "skip", "category": "cooking_lifestyle", "split": "dev"}
+{"id": "cooking_lifestyle-020", "text": "five minutes of cold shower every morning changed my life honestly", "label": "skip", "category": "cooking_lifestyle", "split": "dev"}
+{"id": "cooking_lifestyle-021", "text": "add the garlic last so it doesn't burn", "label": "skip", "category": "cooking_lifestyle", "split": "dev"}
+{"id": "cooking_lifestyle-022", "text": "Norway won the most medals at the winter Olympics in 2022", "label": "skip", "category": "cooking_lifestyle", "split": "test"}
+{"id": "cooking_lifestyle-023", "text": "the new Zelda game sold 10 million copies in three days", "label": "skip", "category": "cooking_lifestyle", "split": "dev"}
+{"id": "cooking_lifestyle-024", "text": "this sunscreen is SPF 50 and doesn't leave a white cast", "label": "skip", "category": "cooking_lifestyle", "split": "dev"}
+{"id": "personal_story-000", "text": "so last year I lost my job and I had to move back in with my parents", "label": "skip", "category": "personal_story", "split": "dev"}
+{"id": "personal_story-001", "text": "my grandma lived through the war and she never talked about it", "label": "skip", "category": "personal_story", "split": "dev"}
+{"id": "personal_story-002", "text": "I got my covid shot in 2021 and honestly I felt fine after", "label": "skip", "category": "personal_story", "split": "test"}
+{"id": "personal_story-003", "text": "when I moved to Helsinki I couldn't find an apartment for four months", "label": "skip", "category": "personal_story", "split": "dev"}
+{"id": "personal_story-004", "text": "my dad was a farmer and the subsidies basically kept us alive", "label": "skip", "category": "personal_story", "split": "dev"}
+{"id": "personal_story-005", "text": "I waited 9 hours in the emergency room last week with my son", "label": "skip", "category": "personal_story", "split": "test"}
+{"id": "personal_story-006", "text": "I voted for the first time yesterday and I was so nervous", "label": "skip", "category": "personal_story", "split": "dev"}
+{"id": "personal_story-007", "text": "my rent went up by 200 euros this year and my salary didn't", "label": "skip", "category": "personal_story", "split": "dev"}
+{"id": "personal_story-008", "text": "I was at the protest on Saturday and it was really peaceful", "label": "skip", "category": "personal_story", "split": "test"}
+{"id": "personal_story-009", "text": "my brother is in the army and we haven't heard from him in a week", "label": "skip", "category": "personal_story", "split": "dev"}
+{"id": "personal_story-010", "text": "I paid off my student loan finally after 8 years", "label": "skip", "category": "personal_story", "split": "dev"}
+{"id": "personal_story-011", "text": "when I was a kid we never had money for holidays", "label": "skip", "category": "personal_story", "split": "dev"}
+{"id": "personal_story-012", "text": "I worked as a nurse for ten years and I burned out", "label": "skip", "category": "personal_story", "split": "test"}
+{"id": "personal_story-013", "text": "my electricity bill was 400 euros in January, I almost cried", "label": "skip", "category": "personal_story", "split": "dev"}
+{"id": "personal_story-014", "text": "I got scammed by a fake bank call and lost 3,000 euros", "label": "skip", "category": "personal_story", "split": "dev"}
+{"id": "personal_story-015", "text": "my family fled Syria in 2015 and we ended up in Germany", "label": "skip", "category": "personal_story", "split": "test"}
+{"id": "personal_story-016", "text": "I tried to see a doctor and the next appointment was in six weeks", "label": "skip", "category": "personal_story", "split": "dev"}
+{"id": "personal_story-017", "text": "I grew up near the Russian border and we always felt it", "label": "skip", "category": "personal_story", "split": "dev"}
+{"id": "personal_story-018", "text": "I lost 20 kilos after I stopped drinking soda", "label": "skip", "category": "personal_story", "split": "test"}
+{"id": "personal_story-019", "text": "my mom has been a teacher for 30 years and she's never been this tired", "label": "skip", "category": "personal_story", "split": "dev"}
+{"id": "satire-000", "text": "breaking news, the government has announced that Mondays are now illegal", "label": "skip", "category": "satire", "split": "dev"}
+{"id": "satire-001", "text": "Scientists confirm that the economy is fine as long as you don't look at it", "label": "skip", "category": "satire", "split": "dev"}
+{"id": "satire-002", "text": "in other news, the prime minister was replaced by a cardboard cutout and nobody noticed for three weeks", "label": "skip", "category": "satire", "split": "test"}
+{"id": "satire-003", "text": "The EU has officially classified bananas that are too curved as a threat to democracy", "label": "skip", "category": "satire", "split": "dev"}
+{"id": "satire-004", "text": "and Putin just announced he's invading the moon because it looked at him funny", "label": "skip", "category": "satire", "split": "dev"}
+{"id": "satire-005", "text": "Parliament voted 200 to 0 to give themselves a nap room, the only thing they ever agreed on", "label": "skip", "category": "satire", "split": "test"}
+{"id": "satire-006", "text": "the ministry of finance has solved inflation by banning prices", "label": "skip", "category": "satire", "split": "dev"}
+{"id": "satire-007", "text": "BREAKING the Finnish government will now pay you in saunas", "label": "skip", "category": "satire", "split": "dev"}
+{"id": "satire-008", "text": "Elon Musk bought the sun and will start charging for daylight next month", "label": "skip", "category": "satire", "split": "test"}
+{"id": "satire-009", "text": "experts warn that thinking too hard about politics may cause you to become a politician", "label": "skip", "category": "satire", "split": "dev"}
+{"id": "satire-010", "text": "the central bank will now print money shaped like apologies", "label": "skip", "category": "satire", "split": "dev"}
+{"id": "satire-011", "text": "Biden and Trump agreed to settle the election with a game of Mario Kart", "label": "skip", "category": "satire", "split": "dev"}
+{"id": "satire-012", "text": "Officials confirm the new tax is actually just them asking nicely for your money", "label": "skip", "category": "satire", "split": "test"}
+{"id": "satire-013", "text": "this just in, the weather forecast is now made by a guy named Kevin looking out the window", "label": "skip", "category": "satire", "split": "dev"}
+{"id": "satire-014", "text": "and the new defence strategy is just asking the enemy to please stop", "label": "skip", "category": "satire", "split": "dev"}
+{"id": "noisy-000", "text": "so the european central bank race interest rates again to four point five percent", "label": "check", "category": "noisy", "split": "dev"}
+{"id": "noisy-001", "text": "finland join nato in april twenty twenty three yeah", "label": "check", "category": "noisy", "split": "dev"}
+{"id": "noisy-002", "text": "the WH0 said that the vaccine change your d n a it's in there report", "label": "check", "category": "noisy", "split": "test"}
+{"id": "noisy-003", "text": "Zelenski bought a 75 million dollar Villa in egypt with the aid money", "label": "check", "category": "noisy", "split": "dev"}
+{"id": "noisy-004", "text": "germany shut down there last three nuclear plants in april", "label": "check", "category": "noisy", "split": "dev"}
+{"id": "noisy-005", "text": "and the uk inflation hit twenty five percent this year highest since the", "label": "check", "category": "noisy", "split": "test"}
+{"id": "noisy-006", "text": "bill gates own eighty percent of farm land in the u s that's why food", "label": "check", "category": "noisy", "split": "dev"}
+{"id": "noisy-007", "text": "macro signed the law raising the retirement age to seventy on tuesday", "label": "check", "category": "noisy", "split": "dev"}
+{"id": "noisy-008", "text": "uh so like the e u is gonna ban growing you're own vegetables from january", "label": "check", "category": "noisy", "split": "test"}
+{"id": "noisy-009", "text": "russia launched the full scale invasion on february twenty four twenty twenty two", "label": "check", "category": "noisy", "split": "dev"}
+{"id": "noisy-010", "text": "the voting machines in georgia flipped three million votes a judge ruled it", "label": "check", "category": "noisy", "split": "dev"}
+{"id": "noisy-011", "text": "sweden became the thirty second member of nato in march", "label": "check", "category": "noisy", "split": "dev"}
+{"id": "noisy-012", "text": "Over forty thousand people died from the vaccine in norway they hid the numbers", "label": "check", "category": "noisy", "split": "test"}
+{"id": "noisy-013", "text": "argentina inflation went above two hundred percent last year", "label": "check", "category": "noisy", "split": "dev"}
+{"id": "noisy-014", "text": "the eecb will freeze all savings over hundred thousand euro", "label": "check", "category": "noisy", "split": "dev"}
+{"id": "noisy-015", "text": "the dam in kakovka was blown up in june and flooded the whole", "label": "check", "category": "noisy", "split": "test"}
+{"id": "noisy-016", "text": "orban has been prime minister since twenty ten in hungary", "label": "check", "category": "noisy", "split": "dev"}
+{"id": "noisy-017", "text": "they printed eighty percent of all dollars in the last two years the fed", "label": "check", "category": "noisy", "split": "dev"}
+{"id": "noisy-018", "text": "the gulf stream already stop in march scientist confirm", "label": "check", "category": "noisy", "split": "test"}
+{"id": "noisy-019", "text": "biden drop out of the race in july twenty twenty four", "label": "check", "category": "noisy", "split": "dev"}
+{"id": "noisy-020", "text": "liz trust resigned after forty five days", "label": "check", "category": "noisy", "split": "dev"}
+{"id": "noisy-021", "text": "pfizer ceo was arrested in belgium last week for for fraud", "label": "check", "category": "noisy", "split": "dev"}
+{"id": "noisy-022", "text": "croatia adopted the euro on the first of january twenty three", "label": "check", "category": "noisy", "split": "test"}
+{"id": "noisy-023", "text": "denmark pay people thousand euros to give up there car", "label": "check", "category": "noisy", "split": "dev"}
+{"id": "noisy-024", "text": "japan stop vaccinating kids completely in twenty twenty three after the deaths", "label": "check", "category": "noisy", "split": "dev"}
+{"id": "noisy-025", "text": "okay so you add the uh the flour and then mix it", "label": "skip", "category": "noisy", "split": "test"}
+{"id": "noisy-026", "text": "i think the government is like the worst ever honestly", "label": "skip", "category": "noisy", "split": "dev"}
+{"id": "noisy-027", "text": "did finland really ban cash or", "label": "skip", "category": "noisy", "split": "dev"}
+{"id": "noisy-028", "text": "the ministry said that the deficit will be four per cent this", "label": "skip", "category": "noisy", "split": "test"}
+{"id": "noisy-029", "text": "my rent went up two hundred euros and my", "label": "skip", "category": "noisy", "split": "dev"}
+{"id": "noisy-030", "text": "messi won the ballon d or eight times more than", "label": "skip", "category": "noisy", "split": "dev"}
+{"id": "noisy-031", "text": "fact check this video says the wh o admitted the vaccine change dna that's false", "label": "skip", "category": "noisy", "split": "dev"}
+{"id": "noisy-032", "text": "mark my words euro collapse in five years", "label": "skip", "category": "noisy", "split": "test"}
+{"id": "noisy-033", "text": "so yeah um like subscribe for more", "label": "skip", "category": "noisy", "split": "dev"}
+{"id": "noisy-034", "text": "bake at one eighty for twenty five minutes", "label": "skip", "category": "noisy", "split": "dev"}
+{"id": "noisy-035", "text": "breaking news mondays are now illegal", "label": "skip", "category": "noisy", "split": "test"}
+{"id": "noisy-036", "text": "the police say two people were arrested after the", "label": "skip", "category": "noisy", "split": "dev"}
+{"id": "noisy-037", "text": "why is nobody talking about this", "label": "skip", "category": "noisy", "split": "dev"}
+{"id": "noisy-038", "text": "and then my grandma she she lived through the war", "label": "skip", "category": "noisy", "split": "test"}
+{"id": "noisy-039", "text": "this is so crazy you guys", "label": "skip", "category": "noisy", "split": "dev"}

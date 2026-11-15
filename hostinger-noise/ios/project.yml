@@ -1,0 +1,94 @@
+# Generate Lens.xcodeproj with: nix run nixpkgs#xcodegen -- generate
+# Commit the generated project: the signing host builds from git.
+name: Lens
+options:
+  bundleIdPrefix: no.henrikkvamme
+  deploymentTarget:
+    iOS: "18.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_STYLE: Automatic
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "0.1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    TARGETED_DEVICE_FAMILY: "1"
+    PHONE_BUILD_BRANCH: ""
+    PHONE_BUILD_COMMIT: ""
+    PHONE_BUILD_TIME: ""
+targets:
+  Lens:
+    type: application
+    platform: iOS
+    sources:
+      - App
+      - Shared
+      # The screen pipeline, for the memory test in Debug.
+      - path: Broadcast/FrameSampler.swift
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: no.henrikkvamme.lens
+        INFOPLIST_FILE: App/Info.plist
+        # The intents in Shared/FootnoteIntents.swift do their work only in the app.
+        SWIFT_ACTIVE_COMPILATION_CONDITIONS: "$(inherited) LENS_APP"
+        GENERATE_INFOPLIST_FILE: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    # Push: the server can update the Live Activity with APNs (update path C). Phone builds are development-signed.
+    entitlements:
+      path: App/Lens.entitlements
+      properties:
+        aps-environment: development
+    dependencies:
+      - target: LensBroadcast
+        embed: true
+      - target: LensWidget
+        embed: true
+      - sdk: ReplayKit.framework
+      - sdk: ActivityKit.framework
+      - sdk: AVKit.framework
+      - sdk: AppIntents.framework
+  LensBroadcast:
+    type: app-extension
+    platform: iOS
+    sources:
+      - Broadcast
+      - path: Shared/LensConfig.swift
+      - path: Shared/LensActivityAttributes.swift
+      - path: Shared/LensSync.swift
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: no.henrikkvamme.lens.broadcast
+        INFOPLIST_FILE: Broadcast/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        SKIP_INSTALL: YES
+    dependencies:
+      - sdk: ReplayKit.framework
+      - sdk: ActivityKit.framework
+      - sdk: Vision.framework
+      - sdk: Accelerate.framework
+  LensWidget:
+    type: app-extension
+    platform: iOS
+    sources:
+      - Widget
+      - Shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: no.henrikkvamme.lens.widget
+        INFOPLIST_FILE: Widget/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        SKIP_INSTALL: YES
+    dependencies:
+      - sdk: WidgetKit.framework
+      - sdk: SwiftUI.framework
+      - sdk: AppIntents.framework
+schemes:
+  Lens:
+    build:
+      targets:
+        Lens: all
+    run:
+      config: Debug
+    archive:
+      config: Release

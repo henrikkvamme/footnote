@@ -1,0 +1,95 @@
+--- a/hostinger-noise/ios/server/server.py
++++ b/hostinger-noise/ios/server/server.py
+@@ -2563,8 +2563,54 @@
+     """Jev's answer to "does this frame show the same video as the reference frame": a probability, or None on an error."""
+     p, _, usd, err = detect.ask_frame(jpeg, *SAME_Q, timeout=5, ref=ref)
+     return p, usd
++
++
++# The video boundary eval (evals/boundary/): Jev's "same" scores are at most 0.10 for another video and at least 0.17 for
++# the same one, so 0.15 sits in the gap. A missed cut costs a language model read (5 to 7 s); a scroll frame read as
++# "same" costs only 1 s, because the next frame shows the new video in full.
++SAME_T = float(os.environ.get("FOOTNOTE_SAME_T", "0.15"))
++LOCAL_SAME = 0.85  # caption overlap at or above: the same video with no model call (another video scored at most 0.71)
+ 
++try:  # Pillow is optional: without it every frame goes to Jev, as before.
++    from PIL import Image, ImageChops, ImageFilter
++except ImportError:
++    Image = None
+ 
++# The local caption check (evals/boundary/caption.py, the same code): the account and caption text of a 540 px TikTok
++# frame, white with a dark shadow, compared with the reference frame. 0.0 when the box holds almost no such text.
++CAPTION_BOX = (8, 925, 430, 1062)
++
++
++def _caption_mask(jpeg):
++    img = Image.open(io.BytesIO(jpeg)).convert("L")
++    if img.width != 540:
++        img = img.resize((540, round(img.height * 540 / img.width)))
++    g = img.crop(CAPTION_BOX)
++    white = g.point(lambda v: 255 if v > 215 else 0)
++    shadow = ImageChops.offset(g, -2, -2).point(lambda v: 255 if v < 170 else 0)
++    return ImageChops.multiply(white, shadow)
++
++
++def caption_overlap(jpeg, ref):
++    a, b = _caption_mask(jpeg), _caption_mask(ref)
++    na, nb = a.histogram()[255], b.histogram()[255]
++    if na + nb < 40:
++        return 0.0
++    # 1 px of JPEG jitter is allowed: each mask is widened before the overlap.
++    hit = ImageChops.multiply(a, b.filter(ImageFilter.MaxFilter(3))).histogram()[255] + \
++        ImageChops.multiply(b, a.filter(ImageFilter.MaxFilter(3))).histogram()[255]
++    return hit / (na + nb)
++
++
++def caption_same(jpeg, ref):
++    if Image is None or not ref:
++        return False
++    try:
++        return caption_overlap(jpeg, ref) >= LOCAL_SAME
++    except Exception:  # noqa: BLE001 - a bad JPEG goes to Jev
++        return False
++
++
+ def tiktok_gate(jpeg, apps="any"):
+     """The decision model's answer to "is media (or TikTok) in front" for a frame, and in the same call "is it private":
+     (p, ms, usd, error, p_private)."""
+@@ -2593,6 +2639,17 @@
+         with lock:
+             apps = apps_of(job["session"])
+             ref = ref_frames.get(job["session"])
++        if caption_same(job["jpeg"], ref):
++            # The account and caption of the reference video are on screen, pixel for pixel: the same video, and so
++            # public media. No model reads this frame (about 5 ms instead of 0.3 s, and no cost).
++            with cond:
++                finish_read(job["session"])
++                counters["screen_same_video_local"] += 1
++                sc = screen_of(job["session"])
++                sc.update(lastTikTokAt=time.time(), noMediaSince=0, candidate=None, mediaStreak=0)
++                release_held(job["session"], time.time())
++                cond.notify_all()
++            return
+         same = detect_pool.submit(same_video, job["jpeg"], ref) if ref else None
+         p, ms, usd, err, p_private = tiktok_gate(job["jpeg"], apps)
+         gate = {"p": round(p, 3) if p is not None else None, "private": round(p_private, 3) if p_private is not None else None, "ms": ms, "error": err}
+@@ -2613,7 +2670,7 @@
+                 cond.notify_all()
+             return
+         p_same, same_usd = same.result() if same else (None, None)
+-        if p_same is not None and p_same >= 0.5:
++        if p_same is not None and p_same >= SAME_T:
+             # Jev: the same video as at the last read. No language model reads this frame.
+             with cond:
+                 finish_read(job["session"])
+--- a/hostinger-noise/ios/server/Dockerfile
++++ b/hostinger-noise/ios/server/Dockerfile
+@@ -1,7 +1,7 @@
+ FROM python:3.12-slim
+ WORKDIR /app
+ # Only for the APNs Live Activity push path (HTTP/2 and ES256). The rest is the standard library.
+-RUN pip install --no-cache-dir "httpx[http2]==0.28.1" "cryptography==44.0.0"
++RUN pip install --no-cache-dir "httpx[http2]==0.28.1" "cryptography==44.0.0" "pillow==11.0.0"
+ # server.py, detect.py, techniques.json, and BUILD (the commit, written by deploy.sh). .dockerignore keeps out WAVs and test data.
+ COPY . .
+ ENV PYTHONUNBUFFERED=1 PORT=3000

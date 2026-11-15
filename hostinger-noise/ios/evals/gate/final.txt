@@ -1,0 +1,75 @@
+set set.jsonl: 290 rows; spec techniques.v3.json (2026-11-15.3-eval); assert question server.py ASSERT_Q
+
+== dev, gate only  (public>=0.50 claim>=0.70 quote<0.70, no assert)
+category                  n   tp   fp   fn   tn    prec recall     f1
+asserted_false           28   25    0    3    0   1.000  0.893  0.943
+asserted_true            25   25    0    0    0   1.000  1.000  1.000
+cooking_lifestyle        18    0    0    0   18     -      -      -  
+debunk                   18    0    5    0   13   0.000    -      -  
+noisy                    28   18    0    0   10   1.000  1.000  1.000
+opinion                  18    0    0    0   18     -      -      -  
+personal_story           14    0    0    0   14     -      -      -  
+prediction                7    0    0    0    7     -      -      -  
+question                 14    0    0    0   14     -      -      -  
+quoted_reported          18    0    0    0   18     -      -      -  
+satire                   11    0    0    0   11     -      -      -  
+vague_source_assert       7    7    0    0    0   1.000  1.000  1.000
+TOTAL                   206   75    5    3  123   0.938  0.962  0.949
+
+== dev, gate + speaker question  (public>=0.50 claim>=0.70 quote<0.70 assert>=0.50)
+category                  n   tp   fp   fn   tn    prec recall     f1
+asserted_false           28   25    0    3    0   1.000  0.893  0.943
+asserted_true            25   25    0    0    0   1.000  1.000  1.000
+cooking_lifestyle        18    0    0    0   18     -      -      -  
+debunk                   18    0    0    0   18     -      -      -  
+noisy                    28   18    0    0   10   1.000  1.000  1.000
+opinion                  18    0    0    0   18     -      -      -  
+personal_story           14    0    0    0   14     -      -      -  
+prediction                7    0    0    0    7     -      -      -  
+question                 14    0    0    0   14     -      -      -  
+quoted_reported          18    0    0    0   18     -      -      -  
+satire                   11    0    0    0   11     -      -      -  
+vague_source_assert       7    7    0    0    0   1.000  1.000  1.000
+TOTAL                   206   75    0    3  128   1.000  0.962  0.980
+-- wrong items (FP = false alert, FN = missed claim)
+FN asserted_false-007         pub 0.99 claim 0.97 quote 0.82 assert 0.960 | the Pentagon confirmed that the Maui fires were started by a directed energy weapon
+FN asserted_false-011         pub 0.99 claim 0.97 quote 0.79 assert 0.970 | the new digital euro will expire if you don't spend it within 90 days, the ECB said so
+FN asserted_false-026         pub 0.87 claim 0.19 quote 0.08 assert 0.960 | drinking a teaspoon of baking soda a day cures cancer, oncologists don't want you to know
+
+== test, gate only  (public>=0.50 claim>=0.70 quote<0.70, no assert)
+category                  n   tp   fp   fn   tn    prec recall     f1
+asserted_false           12   12    0    0    0   1.000  1.000  1.000
+asserted_true            10   10    0    0    0   1.000  1.000  1.000
+cooking_lifestyle         7    0    0    0    7     -      -      -  
+debunk                    7    0    4    0    3   0.000    -      -  
+noisy                    12    6    0    1    5   1.000  0.857  0.923
+opinion                   7    0    0    0    7     -      -      -  
+personal_story            6    0    0    0    6     -      -      -  
+prediction                3    0    0    0    3     -      -      -  
+question                  6    0    0    0    6     -      -      -  
+quoted_reported           7    0    0    0    7     -      -      -  
+satire                    4    0    0    0    4     -      -      -  
+vague_source_assert       3    3    0    0    0   1.000  1.000  1.000
+TOTAL                    84   31    4    1   48   0.886  0.969  0.925
+
+== test, gate + speaker question  (public>=0.50 claim>=0.70 quote<0.70 assert>=0.50)
+category                  n   tp   fp   fn   tn    prec recall     f1
+asserted_false           12   12    0    0    0   1.000  1.000  1.000
+asserted_true            10   10    0    0    0   1.000  1.000  1.000
+cooking_lifestyle         7    0    0    0    7     -      -      -  
+debunk                    7    0    0    0    7     -      -      -  
+noisy                    12    6    0    1    5   1.000  0.857  0.923
+opinion                   7    0    0    0    7     -      -      -  
+personal_story            6    0    0    0    6     -      -      -  
+prediction                3    0    0    0    3     -      -      -  
+question                  6    0    0    0    6     -      -      -  
+quoted_reported           7    0    0    0    7     -      -      -  
+satire                    4    0    0    0    4     -      -      -  
+vague_source_assert       3    3    0    0    0   1.000  1.000  1.000
+TOTAL                    84   31    0    1   52   1.000  0.969  0.984
+-- wrong items (FP = false alert, FN = missed claim)
+FN noisy-002                  pub 0.99 claim 0.96 quote 0.81 assert 0.960 | the WH0 said that the vaccine change your d n a it's in there report
+
+calls this run: 0 new (0.00000 USD), 580 from cache
+cache: 1086 calls, 0.04445 USD in total; cost per call 0.0000409 USD
+latency of all cached calls: p50 220 ms, p95 269 ms (n=1086)

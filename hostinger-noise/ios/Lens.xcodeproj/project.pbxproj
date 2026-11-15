@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0659C87A1CD33C3B09E29D1C /* silence.caf in Resources */ = {isa = PBXBuildFile; fileRef = 12C3367B11DBC5C86DC96BE2 /* silence.caf */; };
+		0B02AF409864E245742FD1BF /* LensSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1A724B0A4D58713434F11E /* LensSync.swift */; };
+		0DC381266DEAB5D7E6B192E4 /* ResultPoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB59EF051A2B640957BEC8B /* ResultPoller.swift */; };
+		12622554B5F68B4B0763AB8F /* LensSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1A724B0A4D58713434F11E /* LensSync.swift */; };
+		186F36C60DF1480A987820B5 /* LiveActivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F8486B67ADE114DECFBCF3 /* LiveActivityController.swift */; };
+		1FCF2486DA37BBEEFA811A32 /* IntentBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F284009B94CE51ABDCA322D7 /* IntentBridge.swift */; };
+		23960708B82C4DF82402FF97 /* AudioDownmixer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850FC44DEC5416BFD1184C95 /* AudioDownmixer.swift */; };
+		27B3E209FF161A0E5F74DADC /* ScreenBenchmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B88FCDB8BF8216BCAD8E2A /* ScreenBenchmark.swift */; };
+		2A9AF1FCD60EABB2483C0919 /* FootnoteIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE1A7551E1DB09753265B99 /* FootnoteIntents.swift */; };
+		309F4868594A0EF615DF73CF /* BenchFrame.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 31DDA8790FDC7FCC91EB7EB8 /* BenchFrame.jpg */; };
+		318782416785D1CB89D52D1A /* AppIntents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3E1176AEC2716EBE844E25 /* AppIntents.framework */; };
+		325D4BE9288863C622939948 /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7830D403EC2FEA8DAC7B969D /* Vision.framework */; };
+		32CBB9B77DCDDE20E6B079DA /* LensWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508468FAC81EA63A32382B1A /* LensWidgetBundle.swift */; };
+		33762C0AE9D96A3A4837FC0A /* LensConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB71DD135AE403BBBE1D78 /* LensConfig.swift */; };
+		33D027AE3732A3F7F0587259 /* LensActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B42D9D03BA5D3296147BAED /* LensActivityAttributes.swift */; };
+		3B433290CCADE1F44A23D557 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD686F6ABEB148D8D7583F9 /* ReplayKit.framework */; };
+		423B40A93B45F5B0043EED45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881619ED677375265416CFC7 /* ContentView.swift */; };
+		57924043ED623C4B244C0876 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7172F2ECFB1066206584569F /* AppModel.swift */; };
+		5854EB896E3A217E2A9F2BB8 /* LensIslandViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814666907FD975D1F91B9BAA /* LensIslandViews.swift */; };
+		598880FBCCD5F85A524F88BB /* DemoSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1B43329025973A57D222D /* DemoSession.swift */; };
+		5C02BBE1458A509BE56F4208 /* LensBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E305B05C88B07156152C58 /* LensBrand.swift */; };
+		60F6C1A48754F918FDA2AA56 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5EA498B32EFB0D1C9BC72B /* WidgetKit.framework */; };
+		61B70AB1296893BD6547C71F /* AppIntents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3E1176AEC2716EBE844E25 /* AppIntents.framework */; };
+		69166FD98844889C0BE630BB /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1749C1CCC5D4160C4E8DF1 /* SampleHandler.swift */; };
+		69EF0303CE1336026848E8EA /* LensActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B42D9D03BA5D3296147BAED /* LensActivityAttributes.swift */; };
+		6AECFDC6F32CAA7315047B7B /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A539DD5B1E5B254A696FE0EC /* AVKit.framework */; };
+		736214BD27F4973951B422FD /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD686F6ABEB148D8D7583F9 /* ReplayKit.framework */; };
+		77B97086541308D404235CDB /* ActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3196DDA114A9CE82B715B45 /* ActivityKit.framework */; };
+		78F0F1E2B092DE63E06C66D9 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7083D686FD180CEE4A6A8524 /* Accelerate.framework */; };
+		83BDEC3ACAFD6FB99EBF0C71 /* LensBroadcast.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4A4A78DD2E10D2BD95183664 /* LensBroadcast.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		845526D6798F99591A401E42 /* FrameSampler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A4789085A9D2F8BF0D39ED /* FrameSampler.swift */; };
+		87753EC8C4D5381652A70C90 /* FrameSampler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A4789085A9D2F8BF0D39ED /* FrameSampler.swift */; };
+		89C92CDA2E411A4CBA3843E7 /* ActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3196DDA114A9CE82B715B45 /* ActivityKit.framework */; };
+		8B83C87CDBEB9B3E9477E618 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F9115CFB14E35A931DDFC /* Log.swift */; };
+		8EED39E146145BD6D0C78B3C /* LensBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E305B05C88B07156152C58 /* LensBrand.swift */; };
+		8F08333AE0B39E5A3CB7A66C /* AudioSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA34D140FFD191582E78C4A /* AudioSessionManager.swift */; };
+		94F70729270FDF2A1AE818E3 /* ChunkUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CD1AFBD843E59B65B09666 /* ChunkUploader.swift */; };
+		95568D26B5C94EE1659FCAA8 /* LensSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1A724B0A4D58713434F11E /* LensSync.swift */; };
+		A5BD0172B8391199C1A4A7F3 /* FootnoteIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE1A7551E1DB09753265B99 /* FootnoteIntents.swift */; };
+		A7DA11780CB7E34FC5D086C7 /* FrameUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7047558F98D0C2C215FF4599 /* FrameUploader.swift */; };
+		B2B056788BB9B257C6C6E886 /* OnDeviceSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BFBFABD3FB4AA880B25C8E /* OnDeviceSpeech.swift */; };
+		B8617C3C68582263471D1912 /* LensActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B42D9D03BA5D3296147BAED /* LensActivityAttributes.swift */; };
+		C433C5C98963764BAE4D6C9E /* CardRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392FB4C6A9B6B79A0C482CB1 /* CardRenderer.swift */; };
+		CB23E3B9C7ADACC79049E962 /* PageViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33840E819FEFEA8B8418BFFC /* PageViews.swift */; };
+		CFE292B718E9A85F600BFCD6 /* SpeechModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938180B8D61295259157B089 /* SpeechModels.swift */; };
+		D1207821F3A27FDDE765A580 /* LensConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB71DD135AE403BBBE1D78 /* LensConfig.swift */; };
+		D434FC34DCD1EB2B668A996B /* LensWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 801C949478F9A65ECAC7370F /* LensWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D6FE08D3270877003C47DE4D /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4780448C7CE027CA3791F51C /* SwiftUI.framework */; };
+		D937FB5E5D6CB5946AC390AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5182D49B00B434F226E3EB68 /* Assets.xcassets */; };
+		E44C75B5E65B669F625368B7 /* PiPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EE94808B66BA5545CFD4E9 /* PiPController.swift */; };
+		E6368821497B5577B6F505A1 /* LensLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08FC3FB9BF5FFC45AF4841 /* LensLiveActivity.swift */; };
+		EBC7EDF5BD23817001F4E7E3 /* LensIslandViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814666907FD975D1F91B9BAA /* LensIslandViews.swift */; };
+		ED87F9C4490BB68DA10073D5 /* LensControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4E5C0025B22DA134E7553A /* LensControls.swift */; };
+		EEE21CF1829C6A9E4F3CAD78 /* LensConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB71DD135AE403BBBE1D78 /* LensConfig.swift */; };
+		F163F36AB26F0A3061A02764 /* LensApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B4F2609EDACA848CDEF70 /* LensApp.swift */; };
+		F8A7A268F06D088FDB7880BC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6485B4274D5950498EBF1B8B /* HomeView.swift */; };
+		F8E6BC4F4333398A3D6469DD /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7566C499261A9F06D3DE43 /* SessionStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A79053BF78E2938574B12AF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F893725E30A023B0A229DE65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B2B355AB82B3A842C0C972;
+			remoteInfo = LensBroadcast;
+		};
+		C525ADF58E00DB988CB3B2F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F893725E30A023B0A229DE65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E7D116BA491EEC45C978FC5;
+			remoteInfo = LensWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9E6921862BEA56B734AF0950 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				83BDEC3ACAFD6FB99EBF0C71 /* LensBroadcast.appex in Embed Foundation Extensions */,
+				D434FC34DCD1EB2B668A996B /* LensWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		04A1B43329025973A57D222D /* DemoSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSession.swift; sourceTree = "<group>"; };
+		076B4F2609EDACA848CDEF70 /* LensApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensApp.swift; sourceTree = "<group>"; };
+		12C3367B11DBC5C86DC96BE2 /* silence.caf */ = {isa = PBXFileReference; path = silence.caf; sourceTree = "<group>"; };
+		16A4789085A9D2F8BF0D39ED /* FrameSampler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameSampler.swift; sourceTree = "<group>"; };
+		1EA34D140FFD191582E78C4A /* AudioSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionManager.swift; sourceTree = "<group>"; };
+		2A5EA498B32EFB0D1C9BC72B /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		31CD1AFBD843E59B65B09666 /* ChunkUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChunkUploader.swift; sourceTree = "<group>"; };
+		31DDA8790FDC7FCC91EB7EB8 /* BenchFrame.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BenchFrame.jpg; sourceTree = "<group>"; };
+		33840E819FEFEA8B8418BFFC /* PageViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViews.swift; sourceTree = "<group>"; };
+		392FB4C6A9B6B79A0C482CB1 /* CardRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRenderer.swift; sourceTree = "<group>"; };
+		395F9115CFB14E35A931DDFC /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		3B42D9D03BA5D3296147BAED /* LensActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensActivityAttributes.swift; sourceTree = "<group>"; };
+		3C08FC3FB9BF5FFC45AF4841 /* LensLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensLiveActivity.swift; sourceTree = "<group>"; };
+		4780448C7CE027CA3791F51C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		4A4A78DD2E10D2BD95183664 /* LensBroadcast.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = LensBroadcast.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		508468FAC81EA63A32382B1A /* LensWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensWidgetBundle.swift; sourceTree = "<group>"; };
+		5182D49B00B434F226E3EB68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58BFBFABD3FB4AA880B25C8E /* OnDeviceSpeech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnDeviceSpeech.swift; sourceTree = "<group>"; };
+		60481921752B8BFD8A498993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6485B4274D5950498EBF1B8B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		6B1749C1CCC5D4160C4E8DF1 /* SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandler.swift; sourceTree = "<group>"; };
+		7047558F98D0C2C215FF4599 /* FrameUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameUploader.swift; sourceTree = "<group>"; };
+		7083D686FD180CEE4A6A8524 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		70F8486B67ADE114DECFBCF3 /* LiveActivityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityController.swift; sourceTree = "<group>"; };
+		7172F2ECFB1066206584569F /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		7830D403EC2FEA8DAC7B969D /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
+		7A1A724B0A4D58713434F11E /* LensSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensSync.swift; sourceTree = "<group>"; };
+		801C949478F9A65ECAC7370F /* LensWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = LensWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		814666907FD975D1F91B9BAA /* LensIslandViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensIslandViews.swift; sourceTree = "<group>"; };
+		850FC44DEC5416BFD1184C95 /* AudioDownmixer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioDownmixer.swift; sourceTree = "<group>"; };
+		881619ED677375265416CFC7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8DD686F6ABEB148D8D7583F9 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		8E3E1176AEC2716EBE844E25 /* AppIntents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppIntents.framework; path = System/Library/Frameworks/AppIntents.framework; sourceTree = SDKROOT; };
+		8EE1A7551E1DB09753265B99 /* FootnoteIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootnoteIntents.swift; sourceTree = "<group>"; };
+		938180B8D61295259157B089 /* SpeechModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechModels.swift; sourceTree = "<group>"; };
+		98B88FCDB8BF8216BCAD8E2A /* ScreenBenchmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenBenchmark.swift; sourceTree = "<group>"; };
+		A539DD5B1E5B254A696FE0EC /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		AACD75D42B36D7B22DD01BF8 /* Lens.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Lens.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA4E5C0025B22DA134E7553A /* LensControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensControls.swift; sourceTree = "<group>"; };
+		C150019D66CDAB570EE9696B /* Lens.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Lens.entitlements; sourceTree = "<group>"; };
+		C1E305B05C88B07156152C58 /* LensBrand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensBrand.swift; sourceTree = "<group>"; };
+		C1EE94808B66BA5545CFD4E9 /* PiPController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiPController.swift; sourceTree = "<group>"; };
+		D0EB71DD135AE403BBBE1D78 /* LensConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensConfig.swift; sourceTree = "<group>"; };
+		D46EC3ABAB7B51113D2C043F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DB7566C499261A9F06D3DE43 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		E3196DDA114A9CE82B715B45 /* ActivityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ActivityKit.framework; path = System/Library/Frameworks/ActivityKit.framework; sourceTree = SDKROOT; };
+		E570EA7E3124020A077134CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F284009B94CE51ABDCA322D7 /* IntentBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentBridge.swift; sourceTree = "<group>"; };
+		FDB59EF051A2B640957BEC8B /* ResultPoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPoller.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49D3E28E8EFCDF2B0A89E343 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60F6C1A48754F918FDA2AA56 /* WidgetKit.framework in Frameworks */,
+				D6FE08D3270877003C47DE4D /* SwiftUI.framework in Frameworks */,
+				61B70AB1296893BD6547C71F /* AppIntents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2A23050D97D00896DFBB928 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B433290CCADE1F44A23D557 /* ReplayKit.framework in Frameworks */,
+				77B97086541308D404235CDB /* ActivityKit.framework in Frameworks */,
+				325D4BE9288863C622939948 /* Vision.framework in Frameworks */,
+				78F0F1E2B092DE63E06C66D9 /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9734E3C54283FFD31A7E226 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				736214BD27F4973951B422FD /* ReplayKit.framework in Frameworks */,
+				89C92CDA2E411A4CBA3843E7 /* ActivityKit.framework in Frameworks */,
+				6AECFDC6F32CAA7315047B7B /* AVKit.framework in Frameworks */,
+				318782416785D1CB89D52D1A /* AppIntents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0935ACFBB3DFF2D1DC4C3A6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AACD75D42B36D7B22DD01BF8 /* Lens.app */,
+				4A4A78DD2E10D2BD95183664 /* LensBroadcast.appex */,
+				801C949478F9A65ECAC7370F /* LensWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B59FEE8E793B0FF99F0A9D8 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				8EE1A7551E1DB09753265B99 /* FootnoteIntents.swift */,
+				3B42D9D03BA5D3296147BAED /* LensActivityAttributes.swift */,
+				C1E305B05C88B07156152C58 /* LensBrand.swift */,
+				D0EB71DD135AE403BBBE1D78 /* LensConfig.swift */,
+				814666907FD975D1F91B9BAA /* LensIslandViews.swift */,
+				7A1A724B0A4D58713434F11E /* LensSync.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		6BF1E4E308CE08C26B9EA76F = {
+			isa = PBXGroup;
+			children = (
+				B61904B08F3E4075639EF994 /* App */,
+				A49A68D96E77655B16AC9180 /* Broadcast */,
+				6B59FEE8E793B0FF99F0A9D8 /* Shared */,
+				ABC6A24DB7D717CDCFD54C78 /* Widget */,
+				CCA4B36490A7B8BA8FCCE112 /* Frameworks */,
+				0935ACFBB3DFF2D1DC4C3A6E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A49A68D96E77655B16AC9180 /* Broadcast */ = {
+			isa = PBXGroup;
+			children = (
+				850FC44DEC5416BFD1184C95 /* AudioDownmixer.swift */,
+				31CD1AFBD843E59B65B09666 /* ChunkUploader.swift */,
+				16A4789085A9D2F8BF0D39ED /* FrameSampler.swift */,
+				7047558F98D0C2C215FF4599 /* FrameUploader.swift */,
+				60481921752B8BFD8A498993 /* Info.plist */,
+				58BFBFABD3FB4AA880B25C8E /* OnDeviceSpeech.swift */,
+				6B1749C1CCC5D4160C4E8DF1 /* SampleHandler.swift */,
+			);
+			path = Broadcast;
+			sourceTree = "<group>";
+		};
+		ABC6A24DB7D717CDCFD54C78 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				D46EC3ABAB7B51113D2C043F /* Info.plist */,
+				BA4E5C0025B22DA134E7553A /* LensControls.swift */,
+				3C08FC3FB9BF5FFC45AF4841 /* LensLiveActivity.swift */,
+				508468FAC81EA63A32382B1A /* LensWidgetBundle.swift */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		B61904B08F3E4075639EF994 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7172F2ECFB1066206584569F /* AppModel.swift */,
+				5182D49B00B434F226E3EB68 /* Assets.xcassets */,
+				1EA34D140FFD191582E78C4A /* AudioSessionManager.swift */,
+				31DDA8790FDC7FCC91EB7EB8 /* BenchFrame.jpg */,
+				392FB4C6A9B6B79A0C482CB1 /* CardRenderer.swift */,
+				881619ED677375265416CFC7 /* ContentView.swift */,
+				04A1B43329025973A57D222D /* DemoSession.swift */,
+				6485B4274D5950498EBF1B8B /* HomeView.swift */,
+				E570EA7E3124020A077134CE /* Info.plist */,
+				F284009B94CE51ABDCA322D7 /* IntentBridge.swift */,
+				C150019D66CDAB570EE9696B /* Lens.entitlements */,
+				076B4F2609EDACA848CDEF70 /* LensApp.swift */,
+				70F8486B67ADE114DECFBCF3 /* LiveActivityController.swift */,
+				395F9115CFB14E35A931DDFC /* Log.swift */,
+				33840E819FEFEA8B8418BFFC /* PageViews.swift */,
+				C1EE94808B66BA5545CFD4E9 /* PiPController.swift */,
+				FDB59EF051A2B640957BEC8B /* ResultPoller.swift */,
+				98B88FCDB8BF8216BCAD8E2A /* ScreenBenchmark.swift */,
+				DB7566C499261A9F06D3DE43 /* SessionStore.swift */,
+				12C3367B11DBC5C86DC96BE2 /* silence.caf */,
+				938180B8D61295259157B089 /* SpeechModels.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CCA4B36490A7B8BA8FCCE112 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7083D686FD180CEE4A6A8524 /* Accelerate.framework */,
+				E3196DDA114A9CE82B715B45 /* ActivityKit.framework */,
+				8E3E1176AEC2716EBE844E25 /* AppIntents.framework */,
+				A539DD5B1E5B254A696FE0EC /* AVKit.framework */,
+				8DD686F6ABEB148D8D7583F9 /* ReplayKit.framework */,
+				4780448C7CE027CA3791F51C /* SwiftUI.framework */,
+				7830D403EC2FEA8DAC7B969D /* Vision.framework */,
+				2A5EA498B32EFB0D1C9BC72B /* WidgetKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E7D116BA491EEC45C978FC5 /* LensWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 465470146B2130D6B5DBAC13 /* Build configuration list for PBXNativeTarget "LensWidget" */;
+			buildPhases = (
+				AA8CEA235BB95FB5D4627500 /* Sources */,
+				49D3E28E8EFCDF2B0A89E343 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LensWidget;
+			packageProductDependencies = (
+			);
+			productName = LensWidget;
+			productReference = 801C949478F9A65ECAC7370F /* LensWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		1E7FEAD84316B25D846C93D1 /* Lens */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61A93F23952D9A89A8F6715C /* Build configuration list for PBXNativeTarget "Lens" */;
+			buildPhases = (
+				32F0D1A55A005E660C1C4340 /* Sources */,
+				97D51B4F3A89266011CCCF95 /* Resources */,
+				D9734E3C54283FFD31A7E226 /* Frameworks */,
+				9E6921862BEA56B734AF0950 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D58C6A6825809AD5D9F66937 /* PBXTargetDependency */,
+				C612C7CBA0EFFD810ED7604B /* PBXTargetDependency */,
+			);
+			name = Lens;
+			packageProductDependencies = (
+			);
+			productName = Lens;
+			productReference = AACD75D42B36D7B22DD01BF8 /* Lens.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E5B2B355AB82B3A842C0C972 /* LensBroadcast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1954E7F79940A598E2E56061 /* Build configuration list for PBXNativeTarget "LensBroadcast" */;
+			buildPhases = (
+				B0EB96F673B94B285F38AA03 /* Sources */,
+				B2A23050D97D00896DFBB928 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LensBroadcast;
+			packageProductDependencies = (
+			);
+			productName = LensBroadcast;
+			productReference = 4A4A78DD2E10D2BD95183664 /* LensBroadcast.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F893725E30A023B0A229DE65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					1E7D116BA491EEC45C978FC5 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					1E7FEAD84316B25D846C93D1 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					E5B2B355AB82B3A842C0C972 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2A63314F38BB211709841EBE /* Build configuration list for PBXProject "Lens" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 6BF1E4E308CE08C26B9EA76F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E7FEAD84316B25D846C93D1 /* Lens */,
+				E5B2B355AB82B3A842C0C972 /* LensBroadcast */,
+				1E7D116BA491EEC45C978FC5 /* LensWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97D51B4F3A89266011CCCF95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D937FB5E5D6CB5946AC390AD /* Assets.xcassets in Resources */,
+				309F4868594A0EF615DF73CF /* BenchFrame.jpg in Resources */,
+				0659C87A1CD33C3B09E29D1C /* silence.caf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32F0D1A55A005E660C1C4340 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57924043ED623C4B244C0876 /* AppModel.swift in Sources */,
+				8F08333AE0B39E5A3CB7A66C /* AudioSessionManager.swift in Sources */,
+				C433C5C98963764BAE4D6C9E /* CardRenderer.swift in Sources */,
+				423B40A93B45F5B0043EED45 /* ContentView.swift in Sources */,
+				598880FBCCD5F85A524F88BB /* DemoSession.swift in Sources */,
+				2A9AF1FCD60EABB2483C0919 /* FootnoteIntents.swift in Sources */,
+				87753EC8C4D5381652A70C90 /* FrameSampler.swift in Sources */,
+				F8A7A268F06D088FDB7880BC /* HomeView.swift in Sources */,
+				1FCF2486DA37BBEEFA811A32 /* IntentBridge.swift in Sources */,
+				69EF0303CE1336026848E8EA /* LensActivityAttributes.swift in Sources */,
+				F163F36AB26F0A3061A02764 /* LensApp.swift in Sources */,
+				5C02BBE1458A509BE56F4208 /* LensBrand.swift in Sources */,
+				D1207821F3A27FDDE765A580 /* LensConfig.swift in Sources */,
+				EBC7EDF5BD23817001F4E7E3 /* LensIslandViews.swift in Sources */,
+				0B02AF409864E245742FD1BF /* LensSync.swift in Sources */,
+				186F36C60DF1480A987820B5 /* LiveActivityController.swift in Sources */,
+				8B83C87CDBEB9B3E9477E618 /* Log.swift in Sources */,
+				CB23E3B9C7ADACC79049E962 /* PageViews.swift in Sources */,
+				E44C75B5E65B669F625368B7 /* PiPController.swift in Sources */,
+				0DC381266DEAB5D7E6B192E4 /* ResultPoller.swift in Sources */,
+				27B3E209FF161A0E5F74DADC /* ScreenBenchmark.swift in Sources */,
+				F8E6BC4F4333398A3D6469DD /* SessionStore.swift in Sources */,
+				CFE292B718E9A85F600BFCD6 /* SpeechModels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA8CEA235BB95FB5D4627500 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5BD0172B8391199C1A4A7F3 /* FootnoteIntents.swift in Sources */,
+				B8617C3C68582263471D1912 /* LensActivityAttributes.swift in Sources */,
+				8EED39E146145BD6D0C78B3C /* LensBrand.swift in Sources */,
+				33762C0AE9D96A3A4837FC0A /* LensConfig.swift in Sources */,
+				ED87F9C4490BB68DA10073D5 /* LensControls.swift in Sources */,
+				5854EB896E3A217E2A9F2BB8 /* LensIslandViews.swift in Sources */,
+				E6368821497B5577B6F505A1 /* LensLiveActivity.swift in Sources */,
+				12622554B5F68B4B0763AB8F /* LensSync.swift in Sources */,
+				32CBB9B77DCDDE20E6B079DA /* LensWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0EB96F673B94B285F38AA03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23960708B82C4DF82402FF97 /* AudioDownmixer.swift in Sources */,
+				94F70729270FDF2A1AE818E3 /* ChunkUploader.swift in Sources */,
+				845526D6798F99591A401E42 /* FrameSampler.swift in Sources */,
+				A7DA11780CB7E34FC5D086C7 /* FrameUploader.swift in Sources */,
+				33D027AE3732A3F7F0587259 /* LensActivityAttributes.swift in Sources */,
+				EEE21CF1829C6A9E4F3CAD78 /* LensConfig.swift in Sources */,
+				95568D26B5C94EE1659FCAA8 /* LensSync.swift in Sources */,
+				B2B056788BB9B257C6C6E886 /* OnDeviceSpeech.swift in Sources */,
+				69166FD98844889C0BE630BB /* SampleHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C612C7CBA0EFFD810ED7604B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E7D116BA491EEC45C978FC5 /* LensWidget */;
+			targetProxy = C525ADF58E00DB988CB3B2F8 /* PBXContainerItemProxy */;
+		};
+		D58C6A6825809AD5D9F66937 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5B2B355AB82B3A842C0C972 /* LensBroadcast */;
+			targetProxy = A79053BF78E2938574B12AF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		312787BCC02D4D77CE3EB9D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Broadcast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = no.henrikkvamme.lens.broadcast;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		81D005062EBD0D9771B1D333 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PHONE_BUILD_BRANCH = "";
+				PHONE_BUILD_COMMIT = "";
+				PHONE_BUILD_TIME = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		844EABD28029EA8B24064352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/Lens.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = no.henrikkvamme.lens;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) LENS_APP";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8C737BA895F7AB6514A61607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/Lens.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = no.henrikkvamme.lens;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) LENS_APP";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		90495816DE1EE882738BC1D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = no.henrikkvamme.lens.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A07AF2D612C503792CED052B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PHONE_BUILD_BRANCH = "";
+				PHONE_BUILD_COMMIT = "";
+				PHONE_BUILD_TIME = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D49C42892D647E3242C4D7A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Broadcast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = no.henrikkvamme.lens.broadcast;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FFA23E4E590FDDF782648F37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = no.henrikkvamme.lens.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1954E7F79940A598E2E56061 /* Build configuration list for PBXNativeTarget "LensBroadcast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				312787BCC02D4D77CE3EB9D3 /* Debug */,
+				D49C42892D647E3242C4D7A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2A63314F38BB211709841EBE /* Build configuration list for PBXProject "Lens" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A07AF2D612C503792CED052B /* Debug */,
+				81D005062EBD0D9771B1D333 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		465470146B2130D6B5DBAC13 /* Build configuration list for PBXNativeTarget "LensWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFA23E4E590FDDF782648F37 /* Debug */,
+				90495816DE1EE882738BC1D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		61A93F23952D9A89A8F6715C /* Build configuration list for PBXNativeTarget "Lens" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C737BA895F7AB6514A61607 /* Debug */,
+				844EABD28029EA8B24064352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F893725E30A023B0A229DE65 /* Project object */;
+}

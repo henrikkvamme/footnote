@@ -1,0 +1,64 @@
+--- a/hostinger-noise/ios/server/detect.py
++++ b/hostinger-noise/ios/server/detect.py
+@@ -148,6 +148,23 @@
+ # MARK: HTTP
+ 
+ 
++def _read_json(r):
++    """The JSON body, returned as soon as it is complete. The AI Router's /v1/systemone sends the whole answer at once
++    but ends the chunked stream 0.4 to 5 s later (perf-jev/README.md); r.read() would wait for that end. Leaving the
++    `with` block closes the connection, so the unread end of the stream does no harm."""
++    buf = b""
++    while True:
++        chunk = r.read1(65536)
++        if not chunk:
++            return json.loads(buf)
++        buf += chunk
++        if buf.rstrip().endswith(b"}"):
++            try:
++                return json.loads(buf)
++            except ValueError:
++                pass  # a "}" inside the body, not its end: read on
++
++
+ def _post(url, payload, key, timeout):
+     """POST JSON with one retry on a timeout, 429 or 5xx. Returns (data, None) or (None, error)."""
+     body = json.dumps(payload).encode()
+@@ -161,7 +178,7 @@
+             "X-Title": "Footnote", "HTTP-Referer": "https://lens.srv2159196.hstgr.cloud/"})
+         try:
+             with urllib.request.urlopen(req, timeout=timeout) as r:
+-                return json.loads(r.read()), None
++                return _read_json(r), None
+         except urllib.error.HTTPError as e:
+             err = "HTTP %s: %s" % (e.code, e.read()[:300].decode(errors="replace"))
+             if e.code != 429 and e.code < 500:
+@@ -350,7 +367,17 @@
+         note_outcome(backend, err)
+         return out, err, backend
+     hedge_stats["calls"] += 1
++    t0 = time.time()
+     first = _hedge_pool.submit(_call, backend, item)
++
++    def first_done(f):
++        # The first backend answered within HEDGE_SECONDS, even when the second won the race: it is fast again, so the
++        # next call waits the full HEDGE_SECONDS for it. Without this the 0.3 s step latches after 3 slow calls, and a
++        # backend that needs 0.7 s (jev on the router) never wins again (/api/info showed streak = calls = 437).
++        if time.time() - t0 <= HEDGE_SECONDS and not f.exception() and not f.result()[1]:
++            hedge_stats["streak"] = 0
++
++    first.add_done_callback(first_done)
+     # While the second call won the last 3 times (the first backend is slow now), it starts almost at once.
+     try:
+         out, err = first.result(timeout=0.3 if hedge_stats["streak"] >= 3 else HEDGE_SECONDS)
+--- a/hostinger-noise/ios/server/server.py
++++ b/hostinger-noise/ios/server/server.py
+@@ -473,7 +473,7 @@
+     )
+     try:
+         with urllib.request.urlopen(req, timeout=timeout) as r:
+-            data = json.loads(r.read())
++            data = detect._read_json(r)  # the router ends the stream seconds after the answer: do not wait for it
+         text = (data["choices"][0]["message"]["content"] or "").strip()
+         usage = data.get("usage") or {}
+         if url == OPENROUTER_CHAT_URL and usage.get("cost"):

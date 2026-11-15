@@ -1,0 +1,7 @@
+# The "key" fields in this file are sha1 hashes of eval inputs (evals/gate/run.py), not secrets.
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "sha1 cache keys of the gate eval"
+paths = ['''hostinger-noise/ios/evals/gate/cache\.jsonl''']

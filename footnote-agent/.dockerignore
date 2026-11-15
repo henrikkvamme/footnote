@@ -1,0 +1,9 @@
+node_modules
+dist
+.verify
+.env
+.git
+.tanstack
+.nitro
+.output
+video*

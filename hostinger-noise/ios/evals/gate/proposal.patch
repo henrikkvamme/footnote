@@ -1,0 +1,63 @@
+diff --git i/hostinger-noise/ios/server/detect.py w/hostinger-noise/ios/server/detect.py
+index c9576d7..ad4dae5 100644
+--- i/hostinger-noise/ios/server/detect.py
++++ w/hostinger-noise/ios/server/detect.py
+@@ -650,7 +650,7 @@ SELFTEST = [
+ 
+ def selftest(backends):
+     ok = True
+-    assert len(TECHNIQUES) == 10 and set(GATES) == {"war", "quote", "claim"}, "techniques.json must have 10 techniques and 3 gates"
++    assert len(TECHNIQUES) == 10 and set(GATES) == {"war", "quote", "claim", "public"}, "techniques.json must have 10 techniques and 4 gates"
+     for t in SPEC["techniques"]:
+         assert len(t["short"]) <= 9, "short label longer than 9: %s" % t["short"]
+         assert t["why"].endswith(".") and t["criteria"].get("true") and t["criteria"].get("false"), t["id"]
+diff --git i/hostinger-noise/ios/server/server.py w/hostinger-noise/ios/server/server.py
+index c5592bb..7ff83cc 100644
+--- i/hostinger-noise/ios/server/server.py
++++ w/hostinger-noise/ios/server/server.py
+@@ -151,9 +151,11 @@ TIKTOK_Q = ("Is the app in front on this phone screen TikTok (the TikTok app, or
+ # 0.7: the reactum demo claim scores 0.74 on Gemini Decision; 17 of 78 test lines pass, opinions and questions score
+ # below 0.2 (PERF.md).
+ CLAIM_P = float(os.environ.get("LENS_CLAIM_P", "0.7"))
+-# The quote gate also rises for a neutral report ("the ministry said ...": 0.45 to 0.89 on the test files), which is
+-# checkable; a claim that the speaker debunks scores 0.97 and more.
+-CLAIM_QUOTE_MAX = 0.9
++# The quote gate rises for a neutral report ("the ministry said ...") and for a debunk. Footnote alerts only when the
++# speaker asserts the claim, so a report counts as quoted too. 0.7 with techniques.json 2026-11-15.2: precision 1.00,
++# recall 0.96 on the dev split of evals/gate (0.86 and 0.99 at 0.9 with the old wording). It misses a false claim that
++# names an authority as proof ("the ECB said so", quote 0.79 to 0.82).
++CLAIM_QUOTE_MAX = 0.7
+ PUBLIC_MIN = 0.5  # the public affairs gate: football scores and recipe facts are claims too, but not ours
+ NOW_CLAIM_P = 0.5  # "deliver now" with no check yet: the most checkable claim of the last NOW_CLAIM_SECONDS at or above this
+ NOW_CLAIM_SECONDS = 30
+diff --git i/hostinger-noise/ios/server/techniques.json w/hostinger-noise/ios/server/techniques.json
+index 9a65470..5653e6e 100644
+--- i/hostinger-noise/ios/server/techniques.json
++++ w/hostinger-noise/ios/server/techniques.json
+@@ -1,5 +1,5 @@
+ {
+-  "version": "2026-11-15.1",
++  "version": "2026-11-15.2",
+   "source": "Labels and definitions from the UNLP 2025 shared task (github.com/unlp-workshop/unlp-2025-shared-task, data/techniques-en.md). Contrast cases written for Footnote.",
+   "context": {
+     "speech": "SENTENCE TO JUDGE (spoken in a short video; it can be Ukrainian, Russian or English): {text}",
+@@ -20,15 +20,15 @@
+     "quote": {
+       "instructions": "Does the speaker report, quote, debunk or mock the claim in the text to judge, instead of making the claim in their own voice?",
+       "criteria": {
+-        "true": "The speaker quotes a named person or outlet in a neutral way ('the ministry said that ...'), states a claim in order to refute it ('Pro-Kremlin channels claim X. That is false.'), labels it as propaganda or a fake, or uses clear sarcasm to mock it.",
+-        "false": "The speaker makes the claim in their own voice, also when they add a vague source such as 'people say', 'experts say' or 'our sources report'."
++        "true": "The speaker passes on what someone else said or announced without saying it is true ('the ministry said that ...', 'officials announced ...', 'the mayor told the paper ...', 'they claim that ...'), states a claim in order to refute it ('Pro-Kremlin channels claim X. That is false.', 'X never happened, the story came from a fake site'), labels it as propaganda or a fake, or uses clear sarcasm or satire to mock it.",
++        "false": "The speaker makes the claim in their own voice, also when they add a vague source and stand behind it ('people are saying X, and it is real', 'experts say', 'a friend in the ministry told me', 'research shows')."
+       }
+     },
+     "claim": {
+-      "instructions": "Does the text to judge make a specific factual claim that a person could check against other sources: a number, a date, a named event, or a named person, group or country that did a concrete thing?",
++      "instructions": "Does the text to judge make a specific factual claim about public life that a fact checker could check against news or official sources: a number, a date, a named event, or a named person, group, institution or country that did a concrete thing? The speaker must mean it as real.",
+       "criteria": {
+         "true": "A concrete, checkable statement of fact, such as '22 men were held in the building', 'Russia fired 40 missiles at Kyiv on Tuesday' or 'Zelensky signed the law yesterday'.",
+-        "false": "An opinion, a feeling, a question, a prediction, a vague statement without a checkable detail ('things are getting worse', 'nobody knows'), a call to act, or a claim that the speaker quotes in order to debunk it."
++        "false": "An opinion, a feeling, a question, a prediction, a vague statement without a checkable detail ('things are getting worse', 'nobody knows'), a call to act, or a claim that the speaker quotes in order to debunk it. Also false: the speaker's own life or experience ('I paid my tax bill today', 'my train was cancelled again', 'my sister got her booster last week'), even when it touches public life; and a joke, parody or absurd 'breaking news' that nobody means as fact ('parliament has replaced all ministers with golden retrievers', 'the tax office now accepts payment in cinnamon buns')."
+       }
+     },
+     "public": {

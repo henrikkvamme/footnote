@@ -1,0 +1,15 @@
+@layer theme, base, ui-sdk, components, utilities;
+@import "tailwindcss";
+@import "@ui-sdk/core/web.css";
+@plugin '@tailwindcss/typography';
+
+:root {
+  --ui-radius: 0.5rem;
+}
+
+body {
+  background: var(--ui-background);
+  color: var(--ui-foreground);
+  font-family: var(--ui-font-sans);
+  -webkit-font-smoothing: antialiased;
+}
